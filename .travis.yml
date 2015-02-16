@@ -6,7 +6,7 @@ before_script:
   - bundle exec rake db:create
   - bundle exec rake db:migrate
 script:
-#  - bundle exec rspec spec
+  - bundle exec rspec spec
 deploy:
   provider: heroku
   strategy: git

@@ -1,7 +1,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: wedding_development
+  database: wedding_site_development
   username: root
   password:
   host: localhost
@@ -12,7 +12,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: wedding_test
+  database: wedding_site_test
   username: root
   password:
   host: localhost
