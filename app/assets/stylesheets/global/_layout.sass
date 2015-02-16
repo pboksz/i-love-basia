@@ -7,8 +7,10 @@ html, body
   a
     color: $font-color
     text-decoration: none
-  a:hover
-    color: $link-color
+    padding: 5px 10px
+    border-radius: 10px
+  a:hover:not(.no-link)
+    background-color: $link-color
 
   .clearfix
     clear: both
