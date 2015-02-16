@@ -1,0 +1,20 @@
+language: ruby
+bundler_args: --without development
+rvm:
+  - 2.2.0
+before_script:
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
+script:
+#  - bundle exec rspec spec
+deploy:
+  provider: heroku
+  strategy: git
+  api_key:
+    secure: X47O5PiF9rUmZfwUV0e+tT0JytbUAocc//gqGPELZPLu9sXFrTuSv0v2bDwhIPZjyqDnO4ueztc46vs/KyqPsbooZ6DQK9rIiIAbKoKozCBMchQlnaYoFf/xLPR4lVfJSDzi+Eby0PoGjFzZrZYVYdioyctwnHeCOuqe8HMy23k=
+  app: i-love-basia
+  on:
+    repo: pboksz/wedding-sit
+  run: rake db:migrate
+notifications:
+  email: false
