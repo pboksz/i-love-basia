@@ -14,7 +14,7 @@ deploy:
     secure: X47O5PiF9rUmZfwUV0e+tT0JytbUAocc//gqGPELZPLu9sXFrTuSv0v2bDwhIPZjyqDnO4ueztc46vs/KyqPsbooZ6DQK9rIiIAbKoKozCBMchQlnaYoFf/xLPR4lVfJSDzi+Eby0PoGjFzZrZYVYdioyctwnHeCOuqe8HMy23k=
   app: i-love-basia
   on:
-    repo: pboksz/wedding-sit
+    repo: pboksz/wedding-site
   run: rake db:migrate
 notifications:
   email: false
