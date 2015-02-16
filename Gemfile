@@ -34,8 +34,10 @@ group :development, :test do
 
   gem 'quiet_assets'
   gem 'pry'
+  gem 'travis'
 end
 
 group :development, :production do
+  gem 'rails_12factor'
   gem 'unicorn'
 end
