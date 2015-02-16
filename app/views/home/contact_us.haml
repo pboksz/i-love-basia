@@ -1,0 +1,6 @@
+.contact-us
+  .divider
+  = simple_format("Send us questions, request a song, just say hello.", {}, wrapper_tag: :h2)
+  = simple_format("Send an E-Mail to:")
+  = mail_to 'basiaandphillip@gmail.com', subject: 'A message from ilovebasia.com', class: 'no-link' do
+    = image_tag('contact_us.png', class: :email)
