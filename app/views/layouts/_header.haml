@@ -1,3 +1,11 @@
 %header{ role: 'banner' }
   = link_to root_path, class: 'no-link' do
     = image_tag('monogram.jpg')
+
+  %nav
+    .item= link_to 'Information', information_path
+    .item= link_to 'Our Story', our_story_path
+    .item= link_to 'Gallery', gallery_path
+    .item= link_to 'Recommendations', recommendations_path
+    .item= link_to 'Contact Us', contact_us_path
+    .item.last= link_to 'RSVP', rsvp_path
