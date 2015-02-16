@@ -1,11 +1,13 @@
 .recommendations
-  = simple_format("We highly recommend using iCar, a very cheap Kraków cab company to come from the airport and move about the city when not using public transportation. The number for iCar is +48 12 65 355 55.")
+  %h2= simple_format("Transportation")
+  = simple_format("We highly recommend using#{link_to 'iCar,', 'http://icartaxi.eu'} a very inexpensive Kraków cab company\nto come from the airport and move about the city when not using public transportation.\nThe number for#{link_to 'iCar', 'http://icartaxi.eu'}is +48 12 65 355 55.")
+  = simple_format("There is also a fantastic website and mobile app called #{link_to 'Jak Dojade', 'http://krakow.jakdojade.pl'} that makes finding a bus or tram very easy.")
   .divider
-  = simple_format("Hotels", {}, wrapper_tag: :h2)
-  = simple_format("If you’d like to stay at Grand Hotel for our wedding, there is a special discount rate of 168 euro for a double room for our guests. Please contact Agnieszka Stanek at manager@grand.pl to book your rooms at Grand Hotel.")
+  %h2= simple_format("Hotels")
+  = simple_format("If you’d like to stay at#{link_to 'Grand Hotel', 'http://www.grand.pl'}for our wedding,\nthere is a special discount rate of 168 euro for a double room for our guests.\nPlease contact Agnieszka Stanek at manager@grand.pl to book your rooms at #{link_to 'Grand Hotel.', 'http://www.grand.pl'}")
   = simple_format("More information and other options coming soon.")
   .divider
-  = simple_format("Restaurants", {}, wrapper_tag: :h2)
+  %h2= simple_format("Restaurants")
   = simple_format("Bagels & Burritos: #{link_to 'Bagelmama', 'http://www.bagelmama.com', target: :_blank}")
   = simple_format("French Breakfast: #{link_to 'Charlotte', 'http://www.bistrocharlotte.com', target: :_blank}")
   = simple_format("Brunch: #{link_to 'Nova', 'http://novarestobar.pl/', target: :_blank} or #{link_to 'Magnes', 'http://www.magnes.krakow.pl', target: :_blank}")
@@ -15,7 +17,7 @@
   = simple_format("Best Burgers: #{link_to 'Well Done', 'https://www.facebook.com/pages/Well-Done/593169484049058', target: :_blank}")
   = simple_format("Late Night: #{link_to 'Kiełbasy', 'https://www.facebook.com/KielbaskiZPodHaliTargowej', target: :_blank} or #{link_to 'Kumpir', 'http://krakowskikumpir.pl/en', target: :_blank}")
   .divider
-  = simple_format("Bars", {}, wrapper_tag: :h2)
+  %h2= simple_format("Bars and Clubs")
   = simple_format("Flavored Vodka: #{link_to 'Wódka Bar', 'https://www.facebook.com/pages/W%C3%B3dka-Cafe-bar/206241002621', target: :_blank}")
   = simple_format("Mixed Shots: #{link_to 'Zaraz Wracam', 'http://www.zarazwracam.com', target: :_blank}")
   = simple_format("Best Beer Selection: #{link_to 'House of Beer', 'http://www.houseofbeerkrakow.com', target: :_blank}")
@@ -24,19 +26,18 @@
   = simple_format("Cheapest: #{link_to 'Pijalnia', 'https://www.facebook.com/pages/Pijalnia-W%C3%B3dki-i-Piwa/178848655498407', target: :_blank} or #{link_to 'Bania Luka', 'https://www.facebook.com/pages/BaniaLuka-Mi%C4%99dzy-w%C3%B3dk%C4%85-a-zak%C4%85sk%C4%85/214666425224626', target: :_blank}")
   = simple_format("Drinking above a religious bookstore: #{link_to 'Alternatywy 4', 'https://www.facebook.com/alternatywycztery', target: :_blank}")
   .divider
-  = simple_format("Places to See", {}, wrapper_tag: :h2)
+  %h2= simple_format("Places to See")
   = simple_format(link_to 'Wawel Castle', 'http://www.wawel.krakow.pl/en', target: :_blank)
   = simple_format(link_to 'Wieliczka Salt Mines', 'http://www.wieliczka-saltmine.com/?__utma=1.900265029.1424099190.1424099190.1424099190.1&__utmb=1.1.10.1424099190&__utmc=1&__utmx=-&__utmz=1.1424099190.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)&__utmv=-&__utmk=129348748', target: :_blank)
   = simple_format(link_to 'Wisła River', 'http://en.wikipedia.org/wiki/Vistula', target: :_blank)
   = simple_format(link_to 'Rynek', 'http://www.krakow.pl', target: :_blank)
   = simple_format(link_to 'Koscioł Mariacki', 'http://mariacki.com/index.php/en', target: :_blank)
   = simple_format(link_to 'Cracovia Football Stadium', 'http://www.cracovia.pl', target: :_blank)
-
   .divider
-  = simple_format("Shopping", {}, wrapper_tag: :h2)
+  %h2= simple_format("Shopping")
   = simple_format(link_to 'Galeria Krakówska', 'http://www.galeriakrakowska.pl', target: :_blank)
   = simple_format(link_to 'Galeria Kazimierz', 'http://galeriakazimierz.pl', target: :_blank)
   = simple_format(link_to 'Bonarka City Center', 'http://www.bonarkacitycenter.pl', target: :_blank)
   .divider
-  = simple_format("Beauty Salons / Spas", {}, wrapper_tag: :h2)
+  %h2= simple_format("Beauty Salons / Spas")
   = simple_format("More information coming soon.")
