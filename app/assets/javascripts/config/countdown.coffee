@@ -26,5 +26,6 @@ updateCountdown = ->
   element.find('.seconds .value').text(asTime(seconds))
 
 asTime = (value) ->
+  return "00" if value <= 0
   value = Math.round(value).toString()
   if value.length > 1 then value else "0#{value}"
