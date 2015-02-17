@@ -20,7 +20,7 @@ class HomeController < ApplicationController
   end
 
   def rsvp
-    render :rsvp
+    redirect_to new_guest_path
   end
 
   private
