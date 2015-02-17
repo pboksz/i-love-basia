@@ -3,3 +3,4 @@
 #= require turbolinks
 
 #= require config/countdown
+#= require config/featherlight
