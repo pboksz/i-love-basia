@@ -5,15 +5,14 @@ html, body
   background: $background-color
 
   a
-    color: $font-color
     text-decoration: none
-    padding: 10px
-    border-radius: 10px
+    color: $font-color
+    margin: 5px
+  a:not(.no-link)
+    border-bottom: 1px solid $background-darker
   a:hover:not(.no-link)
-    background-color: $link-color
-
-  .clearfix
-    clear: both
+    color: $link-color
+    border-color: $link-color
 
   .container
     margin: 0 auto
