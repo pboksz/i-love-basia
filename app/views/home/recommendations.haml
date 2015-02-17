@@ -1,10 +1,10 @@
 .recommendations
   %h2= simple_format("Transportation")
-  = simple_format("We highly recommend using #{link_to 'iCar,', 'http://icartaxi.eu'} a very inexpensive Kraków cab company\nto come from the airport and move about the city when not using public transportation.\nThe number for #{link_to 'iCar', 'http://icartaxi.eu'} is +48 12 65 355 55.")
-  = simple_format("There is also a fantastic website and mobile app called #{link_to 'Jak Dojade', 'http://krakow.jakdojade.pl'} that makes finding a bus or tram very easy.")
+  = simple_format("We highly recommend using #{link_to 'iCar,', 'http://icartaxi.eu', target: :_blank} a very inexpensive Kraków cab company\nto come from the airport and move about the city when not using public transportation.\nThe number for #{link_to 'iCar', 'http://icartaxi.eu', target: :_blank} is +48 12 65 355 55.")
+  = simple_format("There is also a fantastic website and mobile app called #{link_to 'Jak Dojade', 'http://krakow.jakdojade.pl', target: :_blank} that makes finding a bus or tram very easy.")
   .divider
   %h2= simple_format("Hotels")
-  = simple_format("If you’d like to stay at #{link_to 'Grand Hotel', 'http://www.grand.pl'} for our wedding,\nthere is a special discount rate of 168 euro for a double room for our guests.\nPlease contact Agnieszka Stanek at manager@grand.pl to book your rooms at #{link_to 'Grand Hotel.', 'http://www.grand.pl'}")
+  = simple_format("If you’d like to stay at #{link_to 'Grand Hotel', 'http://www.grand.pl', target: :_blank} for our wedding,\nthere is a special discount rate of 168 euro for a double room for our guests.\nPlease contact Agnieszka Stanek at #{mail_to 'manager@grand.pl', 'manager@grand.pl', subject: 'Rooms for Zawisła Boksz Wedding', body: 'Dear Agnieszka Stanek,'} to book your rooms at #{link_to 'Grand Hotel.', 'http://www.grand.pl', target: :_blank}")
   = simple_format("More information and other options coming soon.")
   .divider
   %h2= simple_format("Restaurants")
