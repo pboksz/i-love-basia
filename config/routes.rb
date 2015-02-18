@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   admin_auth_routes
 
+  namespace :admin do
+    resources :guests, only: [:index]
+  end
+
   get '/information', to: 'home#information'
   get '/our_story', to: 'home#our_story'
   get '/gallery', to: 'home#gallery'
