@@ -5,6 +5,10 @@ class GuestsRepository
     @klass = Guest
   end
 
+  def all
+    klass.all
+  end
+
   def find_all(attributes)
     klass.where(attributes)
   end

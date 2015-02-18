@@ -1,2 +1,14 @@
-.admin.guests
-  %h2= simple_format("Coming soon.")
+.admin.guests.index
+  %h2= simple_format("All Guests")
+
+  %table
+    %thead
+      %tr
+        %td= 'Name'
+        %td= 'Attending?'
+
+    %tbody
+      - guests.each do |guest|
+        %tr
+          %td= guest.name
+          %td= guest.attending?
