@@ -1,0 +1,9 @@
+.rsvp
+  %h2= simple_format("Répondez s'il Vous Plaît")
+  = form_tag guests_path, method: :post do
+    .section
+      = simple_format("Please give us your name.")
+      = text_field_tag 'guest[name]', '', placeholder: 'First Last'
+
+    .section.actions
+      = submit_tag 'Next'

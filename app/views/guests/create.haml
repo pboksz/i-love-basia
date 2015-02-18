@@ -1,0 +1,16 @@
+.rsvp
+  = form_tag guests_path, method: :put do
+    - guests.each do |guest|
+      .section
+        = label_tag "guest[#{guest.id}]", guest.name
+        .option
+          = radio_button_tag "guest[#{guest.id}][attending]", true
+          = label_tag "guest[#{guest.id}][attending][true]", 'Accepts with Pleasure'
+        .option
+          = radio_button_tag "guest[#{guest.id}][attending]", false
+          = label_tag "guest[#{guest.id}][attending][false]", 'Declines with Regret'
+
+    -#TODO comments
+
+    .section.actions
+      = submit_tag 'RSVP'
