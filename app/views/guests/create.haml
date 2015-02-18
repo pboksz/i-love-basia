@@ -1,8 +1,10 @@
 .rsvp
+  %h2= simple_format("Répondez s'il Vous Plaît")
   = form_tag guests_path, method: :put do
+    = simple_format("Please tell us if you and your associated guests are coming to the wedding.")
     - guests.each do |guest|
       .section
-        = label_tag "guest[#{guest.id}]", guest.name
+        .name= "#{guest.name}: "
         .option
           = radio_button_tag "guest[#{guest.id}][attending]", true
           = label_tag "guest[#{guest.id}][attending][true]", 'Accepts with Pleasure'
