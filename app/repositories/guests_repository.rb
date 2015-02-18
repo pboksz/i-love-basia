@@ -5,11 +5,18 @@ class GuestsRepository
     @klass = Guest
   end
 
-  def new(attributes = {})
-    klass.new(attributes)
+  def find_all(attributes)
+    klass.where(attributes)
   end
 
-  def create(attributes = {})
-    klass.create(attributes)
+  def find(attributes)
+    find_all(attributes).first
+  end
+
+  def update(id, attributes)
+    model = find(id: id)
+    model.update_attributes(attributes)
+
+    model
   end
 end
