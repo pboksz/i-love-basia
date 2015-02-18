@@ -15,12 +15,12 @@ class HomeController < ApplicationController
     render :recommendations
   end
 
-  def contact_us
-    render :contact_us
+  def rsvp
+    render :rsvp
   end
 
-  def rsvp
-    redirect_to new_guest_path
+  def contact_us
+    render :contact_us
   end
 
   private

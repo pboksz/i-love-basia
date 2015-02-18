@@ -1,6 +1,6 @@
 .rsvp
   %h2= simple_format("Répondez s'il Vous Plaît")
-  = form_for guest, url: guests_path, method: :post do |f|
+  = form_for Guest.new, url: guests_path, method: :post do |f|
     .section
       = simple_format("Please give us your name.")
       = f.text_field :name, placeholder: 'First Last'
