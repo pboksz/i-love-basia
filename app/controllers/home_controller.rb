@@ -16,7 +16,7 @@ class HomeController < ApplicationController
   end
 
   def rsvp
-    render :rsvp
+    redirect_to guests_path
   end
 
   def contact_us

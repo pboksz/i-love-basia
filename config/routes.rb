@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/contact_us', to: 'home#contact_us'
   get '/rsvp', to: 'home#rsvp'
 
-  resources :guests, only: [:new, :create]
+  resource :guests, only: [:show, :create, :update]
 
   root 'home#information'
 end
