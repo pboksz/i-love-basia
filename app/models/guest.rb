@@ -1,3 +1,3 @@
 class Guest < ActiveRecord::Base
-  validates :name, :attending, presence: true
+  serialize :associated_guest_ids, Array
 end
