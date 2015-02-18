@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  admin_auth_routes
+
   get '/information', to: 'home#information'
   get '/our_story', to: 'home#our_story'
   get '/gallery', to: 'home#gallery'

@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Use haml for view
 gem 'haml-rails'
+# Simple admin authentication
+gem 'admin_auth'
 
 group :test do
   gem 'database_cleaner'
