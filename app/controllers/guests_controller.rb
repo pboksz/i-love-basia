@@ -6,8 +6,7 @@ class GuestsController < ApplicationController
   def create
     if guest = guests_repository.find(name: create_params[:name])
       # TODO unless already rsvp'd?
-      associated_guests = guests_repository.find_all(id: guest.associated_guest_ids)
-      render :create, locals: { guests: [guest] + associated_guests }
+      render :create, locals: { guests: guests_repository.find_all(id: guest.associated_guest_ids) }
     else
       # TODO error message
       render :show

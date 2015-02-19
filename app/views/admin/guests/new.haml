@@ -1,0 +1,9 @@
+.admin.guests.new
+  %h2= simple_format("Add a Group of Guests")
+
+  = form_tag admin_guests_path, method: :post do
+    - guests.each_with_index do |guest, index|
+      .section= text_field_tag "guest[#{index}][name]", '', placeholder: 'First Last'
+
+    .section.actions
+      = submit_tag 'Save'

@@ -1,6 +1,9 @@
 .admin.guests.index
   %h2= simple_format("All Guests")
 
+  .section.actions
+    = link_to 'Add a Group of Guests', new_admin_guest_path
+
   %table
     %thead
       %tr
