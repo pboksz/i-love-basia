@@ -1,5 +1,5 @@
 .contact-us
-  %h2= simple_format("Send us questions, request a song, just say hello.")
-  = simple_format("Send an E-Mail to:")
+  %h2= simple_format(t('views.contact_us.header'))
+  = simple_format(t('views.contact_us.info'))
   = mail_to 'basiaandphillip@gmail.com', subject: 'A message from ilovebasia.com', class: 'no-link' do
     = image_tag('contact_us.png', class: :email)
