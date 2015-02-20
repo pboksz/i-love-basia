@@ -46,6 +46,19 @@ en:
 
     recommendations:
 
+    rsvp:
+      header: "Répondez s'il Vous Plaît"
+
+      show:
+        info: "Please give us your name."
+        name: 'First Last'
+        submit: 'Next'
+      create:
+        info: "Please tell us if you and your associated guests are coming to the wedding."
+        accept: "Accepts with Pleasure"
+        decline: "Declines with Regret"
+        submit: "RSVP"
+
     contact_us:
       header: "Send us questions, request a song, or just say hello."
       info: "Send an E-Mail to:"

@@ -1,9 +1,9 @@
 .rsvp
-  %h2= simple_format("Répondez s'il Vous Plaît")
+  %h2= simple_format(t('views.rsvp.header'))
   = form_tag guests_path, method: :post do
     .section
-      = simple_format("Please give us your name.")
-      = text_field_tag 'guest[name]', '', placeholder: 'First Last'
+      = simple_format(t('views.rsvp.show.info'))
+      = text_field_tag 'guest[name]', '', placeholder: t('views.rsvp.show.name')
 
     .section.actions
-      = submit_tag 'Next'
+      = submit_tag t('views.rsvp.show.submit')
