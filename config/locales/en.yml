@@ -20,4 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  views:
+    header:
+      information: "Information"
+      our_story: "Our Story"
+      gallery: "Gallery"
+      recommendations: "Recommendations"
+      rsvp: "RSVP"
+      contact_us: "Contact Us"
+
+    footer:
+      information: "Phillip and Basia's Wedding Information"

@@ -3,11 +3,11 @@
     = image_tag('monogram.jpg', class: :monogram)
 
   %nav
-    .link.separator= link_to 'Information', information_path
-    .link.separator= link_to 'Our Story', our_story_path
-    .link.separator= link_to 'Gallery', gallery_path
-    .link.separator= link_to 'Recommendations', recommendations_path
-    .link.separator= link_to 'RSVP', rsvp_path
-    .link= link_to 'Contact Us', contact_us_path
+    .link.separator= link_to t('views.header.information'), information_path
+    .link.separator= link_to t('views.header.our_story'), our_story_path
+    .link.separator= link_to t('views.header.gallery'), gallery_path
+    .link.separator= link_to t('views.header.recommendations'), recommendations_path
+    .link.separator= link_to t('views.header.rsvp'), rsvp_path
+    .link= link_to t('views.header.contact_us'), contact_us_path
 
   .divider
