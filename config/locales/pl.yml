@@ -1,1 +1,100 @@
 pl:
+  views:
+    header:
+      information: "Information"
+      our_story: "Our Story"
+      gallery: "Gallery"
+      recommendations: "Recommendations"
+      rsvp: "RSVP"
+      contact_us: "Contact Us"
+
+    footer:
+      information: "Phillip and Basia's Wedding Information"
+
+    information:
+      header: "Basia and Phillip are getting married on\nSaturday, May 30th 2015 in Kraków, Poland."
+      paragraphs:
+        1: "The wedding will take place at Św. Anny (Church of Saint Anne) at Św. Anny 11, 30-962 Kraków at 3 PM."
+        2: "The reception will be at the Grand Hotel at Sławkowska 5/7, 31-014 Kraków beginning at 6 PM."
+        3: "We kindly request that our guests do not bring flowers to the ceremony,\nbut instead ask for lottery tickets for luck in our future together."
+        4: "We also kindly ask our guests to not buy gifts as we will be moving shortly.\nIf you would like to give a gift, we will graciously accept it in cash form."
+      countdown:
+        header: "Countdown to Our Wedding"
+        days: "Days"
+        hours: "Hours"
+        minutes: "Minutes"
+        seconds: "Seconds"
+
+    our_story:
+      header: "Phillip and Basia met almost 20 years ago."
+      paragraphs:
+        1: "Thanks to the friendship of their parents, Phillip and Basia have been in each other’s lives since the start of elementary school.\nAfter not seeing each other for almost 4 years, a series of small and seemingly meaningless moments brought them back together.\nIt is safe to say that the happy beginnings of this love story are owed mostly to their parents."
+        2: "After attending Phillip’s college graduation party, Basia’s Mom suggested that the two get back in touch.\nThe two exchanged some messages online, met to catch up, and have been together ever since the summer of 2010."
+        3: "In the summer of 2011, the pair moved to Krakow, Poland where Basia began her medical studies at the\nJagiellonian University Medical College and Phillip began working as a software engineer at Lunar Logic."
+        4: "During a visit to Paris with Basia’s Parents and Phillip’s Dad and Stepmom, Phillip proposed to Basia in the\nsecluded gardens of the Château de Fontainebleau with a gorgeous custom-made ring."
+        5: "And now, you get to see them start their 'Happily Ever After'."
+      groom:
+        header: "About the Groom"
+        paragraphs:
+         1: "Phillip Jonathan Boksz was born on May 7th, 1988 to Małgorzata and Stanisław Boksz in New Jersey. He grew up in Oakland and spent most of his summers in Europe visiting family and going to camp. Phillip played tennis, fenced, and played the alto sax. He graduated from the University of Massachusetts: Amherst in 2010 with a Bachelor of Science in Computer Science. Phillip now works as a software developer at Lunar Logic in Krakow, Poland. He is a Taurus, hates long walks AND the beach, and loves board games, vodka, and Basia."
+      bride:
+        header: "About the Bride"
+        paragraphs:
+          1: "Barbara Anna Zawisła was born on April 9th, 1989 to Lucyna and Krzysztof Zawisła in Stalowa Wola, Poland. She has two older brothers, Paul and Luke. Basia moved to the United States in 1995. She grew up in Fair Lawn, New Jersey and enjoyed ballroom dancing, volleyball and playing the piano. She graduated from the Rutgers University Honors Program: New Brunswick in 2011 with a Bachelor of Arts in Cell Biology & Neuroscience with a minor in Music. She currently attends the Jagiellonian University Medical College and will graduate in May 2015. She is an Aries, loves food, chocolate, and Phillip."
+
+    gallery:
+
+    recommendations:
+      coming_soon: "More information and other options coming soon."
+      transportation:
+        header: "Transportation"
+        paragraphs:
+          taxi: "We highly recommend using %{link}, a very inexpensive Kraków cab company\nto come from the airport and move about the city when not using public transportation.\nThe number for %{link} is +48 12 65 355 55."
+          tram: "There is also a fantastic website and mobile app called %{link} that makes finding a bus or tram very easy."
+      hotels:
+        header: "Hotels"
+        paragraphs:
+          grand: "If you’d like to stay at %{link} for our wedding,\nthere is a special discount rate of 168 euro for a double room for our guests.\nPlease contact Agnieszka Stanek at manager@grand.pl to book your rooms at %{link}"
+      restaurants:
+        header: "Restaurants"
+        paragraphs:
+          bagels: "Bagels & Burritos: %{link}"
+          french: "French Breakfast: %{link}"
+          brunch: "Brunch: %{link} or %{link2}"
+          pasta: "Amazing Pasta: %{link}"
+          polish: "Best Polish Food: %{link}"
+          steak: "Best Steak: %{link}"
+          burgers: "Best Burgers: %{link}"
+          late: "Late Night: %{link} or %{link2}"
+      bars:
+        header: "Bars and Clubs"
+        paragraphs:
+          flavored: "Flavored Vodka: %{link}"
+          mixed: "Mixed Shots: %{link}"
+          beer: "Best Beer Selection: %{link}"
+          commie: "'80s Communist Themed: %{link}"
+          dancing: "Best Dancing: %{link} or %{link2}"
+          cheapest: "Cheapest: %{link} or %{link2}"
+          bookstore: "Drinking above a religious bookstore: %{link}"
+      places:
+        header: "Places to See"
+      shopping:
+        header: "Shopping"
+      beauty:
+        header: "Beauty Salons / Spas"
+
+    rsvp:
+      header: "Répondez s'il Vous Plaît"
+      show:
+        info: "Please give us your name."
+        name: 'First Last'
+        submit: 'Next'
+      create:
+        info: "Please tell us if you and your associated guests are coming to the wedding."
+        accept: "Accepts with Pleasure"
+        decline: "Declines with Regret"
+        submit: "RSVP"
+
+    contact_us:
+      header: "Send us questions, request a song, or just say hello."
+      info: "Send an E-Mail to:"
