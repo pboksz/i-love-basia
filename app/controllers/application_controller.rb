@@ -5,12 +5,17 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
-  def after_login_path(locale = nil)
-    admin_guests_path
+  helper_method :locale
+  def locale
+    params[:locale]
   end
 
-  def after_logout_path(locale = nil)
-    root_path
+  def after_login_path(new_locale = locale)
+    admin_guests_path(new_locale)
+  end
+
+  def after_logout_path(new_locale = locale)
+    root_path(new_locale)
   end
 
   private

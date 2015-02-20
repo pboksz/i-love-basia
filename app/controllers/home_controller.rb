@@ -16,7 +16,7 @@ class HomeController < ApplicationController
   end
 
   def rsvp
-    redirect_to guests_path
+    redirect_to guests_path(locale)
   end
 
   def contact_us

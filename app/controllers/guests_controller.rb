@@ -19,7 +19,7 @@ class GuestsController < ApplicationController
     end
 
     # TODO thank you message
-    redirect_to recommendations_path
+    redirect_to recommendations_path(locale)
   end
 
   private

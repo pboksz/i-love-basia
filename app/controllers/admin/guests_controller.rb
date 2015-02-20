@@ -19,7 +19,7 @@ class Admin::GuestsController < ApplicationController
       guests_repository.update(guest.id, associated_guest_ids: guests.map(&:id))
     end
 
-    redirect_to admin_guests_path
+    redirect_to admin_guests_path(locale)
   end
 
   private
