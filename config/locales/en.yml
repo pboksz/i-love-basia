@@ -45,10 +45,46 @@ en:
     gallery:
 
     recommendations:
+      coming_soon: "More information and other options coming soon."
+      transportation:
+        header: "Transportation"
+        paragraphs:
+          taxi: "We highly recommend using %{link}, a very inexpensive Kraków cab company\nto come from the airport and move about the city when not using public transportation.\nThe number for %{link} is +48 12 65 355 55."
+          tram: "There is also a fantastic website and mobile app called %{link} that makes finding a bus or tram very easy."
+      hotels:
+        header: "Hotels"
+        paragraphs:
+          grand: "If you’d like to stay at %{link} for our wedding,\nthere is a special discount rate of 168 euro for a double room for our guests.\nPlease contact Agnieszka Stanek at manager@grand.pl to book your rooms at %{link}"
+      restaurants:
+        header: "Restaurants"
+        paragraphs:
+          bagels: "Bagels & Burritos: %{link}"
+          french: "French Breakfast: %{link}"
+          brunch: "Brunch: %{link} or %{link2}"
+          pasta: "Amazing Pasta: %{link}"
+          polish: "Best Polish Food: %{link}"
+          steak: "Best Steak: %{link}"
+          burgers: "Best Burgers: %{link}"
+          late: "Late Night: %{link} or %{link2}"
+      bars:
+        header: "Bars and Clubs"
+        paragraphs:
+          flavored: "Flavored Vodka: %{link}"
+          mixed: "Mixed Shots: %{link}"
+          beer: "Best Beer Selection: %{link}"
+          commie: "'80s Communist Themed: %{link}"
+          dancing: "Best Dancing: %{link} or %{link2}"
+          cheapest: "Cheapest: %{link} or %{link2}"
+          bookstore: "Drinking above a religious bookstore: %{link}"
+      places:
+        header: "Places to See"
+      shopping:
+        header: "Shopping"
+      beauty:
+        header: "Beauty Salons / Spas"
 
     rsvp:
       header: "Répondez s'il Vous Plaît"
-
       show:
         info: "Please give us your name."
         name: 'First Last'
