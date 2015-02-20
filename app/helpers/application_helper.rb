@@ -8,4 +8,8 @@ module ApplicationHelper
       end
     end
   end
+
+  def blank_link_tag(text, url)
+    link_to text, url, target: :_blank
+  end
 end
