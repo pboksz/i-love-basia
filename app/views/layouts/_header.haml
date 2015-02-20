@@ -1,14 +1,14 @@
 %header{ role: 'banner' }
-  = link_to root_path, class: 'no-link' do
+  = link_to root_path(locale), class: 'no-link' do
     = image_tag('monogram.jpg', class: :monogram)
 
   %nav
-    .link.separator= link_to t('views.header.information'), information_path
-    .link.separator= link_to t('views.header.our_story'), our_story_path
-    .link.separator= link_to t('views.header.gallery'), gallery_path
-    .link.separator= link_to t('views.header.recommendations'), recommendations_path
-    .link.separator= link_to t('views.header.rsvp'), rsvp_path
-    .link= link_to t('views.header.contact_us'), contact_us_path
+    .link.separator= link_to t('views.header.information'), information_path(locale)
+    .link.separator= link_to t('views.header.our_story'), our_story_path(locale)
+    .link.separator= link_to t('views.header.gallery'), gallery_path(locale)
+    .link.separator= link_to t('views.header.recommendations'), recommendations_path(locale)
+    .link.separator= link_to t('views.header.rsvp'), rsvp_path(locale)
+    .link= link_to t('views.header.contact_us'), contact_us_path(locale)
     .locales= render 'layouts/locales'
 
   .divider

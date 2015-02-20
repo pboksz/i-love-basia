@@ -1,6 +1,6 @@
 .rsvp
   %h2= simple_format(t('views.rsvp.header'))
-  = form_tag guests_path, method: :put do
+  = form_tag guests_path(locale), method: :put do
     = simple_format(t('views.rsvp.create.info'))
     - guests.each do |guest|
       .section
