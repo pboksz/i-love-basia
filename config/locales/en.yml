@@ -10,3 +10,17 @@ en:
 
     footer:
       information: "Phillip and Basia's Wedding Information"
+
+    information:
+      header: "Basia and Phillip are getting married on\nSaturday, May 30th 2015 in Kraków, Poland."
+      paragraphs:
+        1: "The wedding will take place at Św. Anny (Church of Saint Anne) at Św. Anny 11, 30-962 Kraków at 3 PM."
+        2: "The reception will be at the Grand Hotel at Sławkowska 5/7, 31-014 Kraków beginning at 6 PM."
+        3: "We kindly request that our guests do not bring flowers to the ceremony,\nbut instead ask for lottery tickets for luck in our future together."
+        4: "We also kindly ask our guests to not buy gifts as we will be moving shortly.\nIf you would like to give a gift, we will graciously accept it in cash form."
+      countdown:
+        header: "Countdown to Our Wedding"
+        days: "Days"
+        hours: "Hours"
+        minutes: "Minutes"
+        seconds: "Seconds"
