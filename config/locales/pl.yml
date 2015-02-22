@@ -1,23 +1,23 @@
 pl:
   views:
     header:
-      information: "Information"
-      our_story: "Our Story"
-      gallery: "Gallery"
-      recommendations: "Recommendations"
+      information: "Informacja"
+      our_story: "Nasza Historia"
+      gallery: "Galeria"
+      recommendations: "Rekomendacje"
       rsvp: "RSVP"
-      contact_us: "Contact Us"
+      contact_us: "Kontakt"
 
     footer:
-      information: "Phillip and Basia's Wedding Information"
+      information: "Phillipa i Basi Informacje Ślubne"
 
     information:
-      header: "Basia and Phillip are getting married on\nSaturday, May 30th 2015 in Kraków, Poland."
+      header: "Basia i Phillip biorą ślub w \n Sobota, 30 maja 2015 w Krakow, Polska."
       paragraphs:
-        1: "The wedding will take place at Św. Anny (Church of Saint Anne) at Św. Anny 11, 30-962 Kraków at 3 PM."
-        2: "The reception will be at the Grand Hotel at Sławkowska 5/7, 31-014 Kraków beginning at 6 PM."
-        3: "We kindly request that our guests do not bring flowers to the ceremony,\nbut instead ask for lottery tickets for luck in our future together."
-        4: "We also kindly ask our guests to not buy gifts as we will be moving shortly.\nIf you would like to give a gift, we will graciously accept it in cash form."
+        1: "Ślub odbędzie się w kościele Św Anny na ulicy Św. Anny 11, 30-962 Kraków o godzinie 15:00."
+        2: "Odbiór będzie w Grand Hotelu na ulicy Sławkowska 5/7, 31-014 Kraków o godzinie 18:00."
+        3: "Uprzejmie prosimy, że nasi goście nie przynoszą kwiaty na uroczystość,\nale zamiast prosić o loterii na szczęście w naszej wspólnej przyszłości."
+        4: "My również prosimy naszych gości, aby nie kupić prezenty, jak będziemy się poruszać w najbliższym czasie.\nJeśli chcesz dać prezent, będziemy łaskawie przyjąć go w formie gotówkowej."
       countdown:
         header: "Countdown to Our Wedding"
         days: "Days"
