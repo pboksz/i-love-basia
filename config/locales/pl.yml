@@ -45,56 +45,56 @@ pl:
     gallery:
 
     recommendations:
-      coming_soon: "More information and other options coming soon."
+      coming_soon: "Więcej informacji i inne opcje wkrótce."
       transportation:
-        header: "Transportation"
+        header: "Transport"
         paragraphs:
-          taxi: "We highly recommend using %{link}, a very inexpensive Kraków cab company\nto come from the airport and move about the city when not using public transportation.\nThe number for %{link} is +48 12 65 355 55."
-          tram: "There is also a fantastic website and mobile app called %{link} that makes finding a bus or tram very easy."
+          taxi: "Zalecamy używanie %{link}, bardzo tani Krakówski\ntaxi pochodzą z lotniska i poruszać się po mieście, jeśli nie korzystasz z transportu publicznego.\nNumer dla %{link} jest: +48 12 65 355 55."
+          tram: "Istnieje również fantastyczna strona internetowa i mobilna aplikacja o nazwie %{link}, który sprawia, że znalezienie się autobusem lub tramwajem bardzo łatwe."
       hotels:
-        header: "Hotels"
+        header: "Hotele"
         paragraphs:
-          grand: "If you’d like to stay at %{link} for our wedding,\nthere is a special discount rate of 168 euro for a double room for our guests.\nPlease contact Agnieszka Stanek at manager@grand.pl to book your rooms at %{link}"
+          grand: "Jeśli chcesz zatrzymać się w %{link} na nasz ślub,\nNie jest specjalna stopa dyskontowa 168 euro za pokój dwuosobowy dla naszych gości.\nSkontaktuj Agnieszka Stanek w manager@grand.pl się zarezerwować pokoje w %{link}"
       restaurants:
-        header: "Restaurants"
+        header: "Restauracje"
         paragraphs:
-          bagels: "Bagels & Burritos: %{link}"
-          french: "French Breakfast: %{link}"
+          bagels: "Bajgle & Burrito: %{link}"
+          french: "Francuski Śniadanie: %{link}"
           brunch: "Brunch: %{link} or %{link2}"
-          pasta: "Amazing Pasta: %{link}"
-          polish: "Best Polish Food: %{link}"
-          steak: "Best Steak: %{link}"
-          burgers: "Best Burgers: %{link}"
-          late: "Late Night: %{link} or %{link2}"
+          pasta: "Niesamowity Pasta: %{link}"
+          polish: "Najlepsze Polske Jedzenie: %{link}"
+          steak: "Najlepszy Stek: %{link}"
+          burgers: "Najlepszy Burgery: %{link}"
+          late: "Późno w Nocy: %{link} or %{link2}"
       bars:
-        header: "Bars and Clubs"
+        header: "Bary i Kluby"
         paragraphs:
-          flavored: "Flavored Vodka: %{link}"
-          mixed: "Mixed Shots: %{link}"
-          beer: "Best Beer Selection: %{link}"
-          commie: "'80s Communist Themed: %{link}"
-          dancing: "Best Dancing: %{link} or %{link2}"
-          cheapest: "Cheapest: %{link} or %{link2}"
-          bookstore: "Drinking above a religious bookstore: %{link}"
+          flavored: "Wódka Smakowa: %{link}"
+          mixed: "Mieszane Shoty: %{link}"
+          beer: "Najlepszy Wybór Piwa: %{link}"
+          commie: "'80s Komunistyczna Tematyczne: %{link}"
+          dancing: "Najlepsza do Tańczena: %{link} or %{link2}"
+          cheapest: "Najtańszy: %{link} or %{link2}"
+          bookstore: "Picie powyżej religijnej księgarni: %{link}"
       places:
-        header: "Places to See"
+        header: "Warto Zobaczyć"
       shopping:
-        header: "Shopping"
+        header: "Zakupy"
       beauty:
-        header: "Beauty Salons / Spas"
+        header: "Salony Piękności / Spa"
 
     rsvp:
       header: "Répondez s'il Vous Plaît"
       show:
-        info: "Please give us your name."
-        name: 'First Last'
-        submit: 'Next'
+        info: "Podaj nam swoje imię i nazwisko."
+        name: 'Imię Nazwisko'
+        submit: 'Dalej'
       create:
-        info: "Please tell us if you and your associated guests are coming to the wedding."
-        accept: "Accepts with Pleasure"
-        decline: "Declines with Regret"
+        info: "Proszę nam powiedzieć, czy ty i twoi goście związane przychodzą do ślubu."
+        accept: "Będziemy Obecni"
+        decline: "Niestety, Nie Możemy Byc Obecni"
         submit: "RSVP"
 
     contact_us:
-      header: "Send us questions, request a song, or just say hello."
-      info: "Send an E-Mail to:"
+      header: "Wyślij do nas pytania, poprosić utwór, lub po prostu się przywitać."
+      info: "Wyślij E-Mail do:"
