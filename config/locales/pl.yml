@@ -19,28 +19,28 @@ pl:
         3: "Uprzejmie prosimy, że nasi goście nie przynoszą kwiaty na uroczystość,\nale zamiast prosić o loterii na szczęście w naszej wspólnej przyszłości."
         4: "My również prosimy naszych gości, aby nie kupić prezenty, jak będziemy się poruszać w najbliższym czasie.\nJeśli chcesz dać prezent, będziemy łaskawie przyjąć go w formie gotówkowej."
       countdown:
-        header: "Countdown to Our Wedding"
-        days: "Days"
-        hours: "Hours"
-        minutes: "Minutes"
-        seconds: "Seconds"
+        header: "Odliczanie do Naszego Ślubu"
+        days: "Dni"
+        hours: "Godziny"
+        minutes: "Minuty"
+        seconds: "Sekundy"
 
     our_story:
-      header: "Phillip and Basia met almost 20 years ago."
+      header: "Phillip i Basia spotkały się prawie 20 lat temu."
       paragraphs:
-        1: "Thanks to the friendship of their parents, Phillip and Basia have been in each other’s lives since the start of elementary school.\nAfter not seeing each other for almost 4 years, a series of small and seemingly meaningless moments brought them back together.\nIt is safe to say that the happy beginnings of this love story are owed mostly to their parents."
-        2: "After attending Phillip’s college graduation party, Basia’s Mom suggested that the two get back in touch.\nThe two exchanged some messages online, met to catch up, and have been together ever since the summer of 2010."
-        3: "In the summer of 2011, the pair moved to Krakow, Poland where Basia began her medical studies at the\nJagiellonian University Medical College and Phillip began working as a software engineer at Lunar Logic."
-        4: "During a visit to Paris with Basia’s Parents and Phillip’s Dad and Stepmom, Phillip proposed to Basia in the\nsecluded gardens of the Château de Fontainebleau with a gorgeous custom-made ring."
-        5: "And now, you get to see them start their 'Happily Ever After'."
+        1: "Dzięki przyjaźni z rodziców, Filipa i Basi były sobie w życiu od początku podstawówki.\nPo nie widząc siebie przez prawie 4 lata, seria małych i pozornie nic nie znaczących momentów przyniósł je z powrotem.\nTo na pewno powiedzieć, że szczęśliwe Początki tej historii miłosnej są należne głównie do rodziców."
+        2: "Po ukończeniu Phillipa ukończeniu college'u imprezę, Basi Mamo zasugerował, że dwie wrócić w kontakcie.\nObydwaj wymienili kilka wiadomości w trybie online, spotkali się, aby nadrobić zaległości, a już razem, odkąd latem 2010 roku."
+        3: "W lecie 2011 roku, przeniósł się do Krakowa parą, w Polsce, gdzie Basia rozpoczął studia medyczne w\nCollegium Medicum Uniwersytetu Jagiellońskiego, a Phillip rozpoczął pracę jako inżynier oprogramowania w Lunar Logic."
+        4: "Podczas wizyty w Paryżu u rodziców Basi i Phillipa tatą i Stepmom, Phillip zaproponowała Basia w zacisznych ogrodach\nChâteau de Fontainebleau z pięknym wykonanymi na ringu."
+        5: "A teraz, można dostać się do zobaczyć je rozpocząć 'Długo i Szczęśliwie'."
       groom:
-        header: "About the Groom"
+        header: "O Pana Młodego"
         paragraphs:
-         1: "Phillip Jonathan Boksz was born on May 7th, 1988 to Małgorzata and Stanisław Boksz in New Jersey. He grew up in Oakland and spent most of his summers in Europe visiting family and going to camp. Phillip played tennis, fenced, and played the alto sax. He graduated from the University of Massachusetts: Amherst in 2010 with a Bachelor of Science in Computer Science. Phillip now works as a software developer at Lunar Logic in Krakow, Poland. He is a Taurus, hates long walks AND the beach, and loves board games, vodka, and Basia."
+         1: "Phillip Jonathan urodził się 07 maja 1988 do etui Małgorzaty i Stanisława w New Jersey. Dorastał w Oakland i spędził większość lata w Europie, odwiedzając rodzinę i chodzić do obozu. Phillip grał w tenisa, ogrodzony, a na saksofonie altowym zagrał. Ukończył studia na Uniwersytecie Massachusetts: Amherst w 2010 roku z Bachelor of Science w dziedzinie informatyki. Phillip teraz pracuje jako programista w Lunar Logic w Krakowie. On jest byk, znosi długie spacery i na plażę, i kocha, gry planszowe, wódkę i Basi."
       bride:
-        header: "About the Bride"
+        header: "O Panny Młodej"
         paragraphs:
-          1: "Barbara Anna Zawisła was born on April 9th, 1989 to Lucyna and Krzysztof Zawisła in Stalowa Wola, Poland. She has two older brothers, Paul and Luke. Basia moved to the United States in 1995. She grew up in Fair Lawn, New Jersey and enjoyed ballroom dancing, volleyball and playing the piano. She graduated from the Rutgers University Honors Program: New Brunswick in 2011 with a Bachelor of Arts in Cell Biology & Neuroscience with a minor in Music. She currently attends the Jagiellonian University Medical College and will graduate in May 2015. She is an Aries, loves food, chocolate, and Phillip."
+          1: "Barbara Anna Zawisła urodził się 9 kwietnia 1989 na Lucyna i Krzysztof Zawisła w Stalowej Woli, Polska. Ma dwóch starszych braci, Pawła i Łukasza. Basia przeniósł się do Stanów Zjednoczonych w roku 1995. Dorastała w Fair Lawn, New Jersey i cieszył się taniec towarzyski, siatkówkę i gry na fortepianie. Ukończyła studia na Rutgers University Honors Program: New Brunswick w 2011 roku z Bachelor of Arts w Cell Biology & Neuroscience z małoletnim w Music. Obecnie bierze udział w Collegium Medicum Uniwersytetu Jagiellońskiego i studia maja 2015. Jest Baran, kocha jedzenie, czekolada, i Phillip."
 
     gallery:
 
