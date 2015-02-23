@@ -7,10 +7,10 @@
       .section
         .name= guest.name
         .option
-          = radio_button_tag "guest[#{guest.id}][attending]", true, guest.attending?
+          = radio_button_tag "guest[#{guest.id}][attending]", true, guest.attending == true
           = label_tag "guest[#{guest.id}][attending][true]", t('views.rsvp.create.accept')
         .option
-          = radio_button_tag "guest[#{guest.id}][attending]", false, !guest.attending?
+          = radio_button_tag "guest[#{guest.id}][attending]", false, guest.attending == false
           = label_tag "guest[#{guest.id}][attending][false]", t('views.rsvp.create.decline')
 
     -#TODO comments
