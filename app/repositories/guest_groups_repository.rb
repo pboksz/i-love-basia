@@ -5,7 +5,7 @@ class GuestGroupsRepository < DefaultRepository
 
   def new(attributes = {})
     group = klass.new(attributes)
-    group.guests = (1..6).map { guests_repository.new }
+    group.guests = new_guests
 
     group
   end
@@ -32,6 +32,10 @@ class GuestGroupsRepository < DefaultRepository
 
   def guests_repository
     @guests_repository ||= GuestsRepository.new
+  end
+
+  def new_guests
+    (1..6).map { guests_repository.new }
   end
 
   def create_guests(group_id, guests_attributes)
