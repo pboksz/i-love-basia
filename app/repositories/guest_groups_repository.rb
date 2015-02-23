@@ -20,12 +20,11 @@ class GuestGroupsRepository < DefaultRepository
   end
 
   def update(id, attributes)
-    if guests_attributes = attributes.delete(:guests)
-      group = update(id, attributes)
-      update_guests(guests_attributes)
+    guests_attributes = attributes.delete(:guests)
+    group = super(id, attributes)
+    update_guests(guests_attributes) if guests_attributes
 
-      group
-    end
+    group
   end
 
   private
