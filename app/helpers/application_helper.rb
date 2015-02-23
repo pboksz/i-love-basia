@@ -12,4 +12,10 @@ module ApplicationHelper
   def blank_link_tag(text, url)
     link_to text, url, target: :_blank
   end
+
+  def attending_tag(attending)
+    return 'No Response' if attending.nil?
+    return 'Declined' if !attending
+    return 'Accepted' if attending
+  end
 end

@@ -17,4 +17,4 @@
         - guest_group.guests.each do |guest|
           %tr
             %td= guest.name
-            %td= guest.attending?
+            %td= attending_tag(guest.attending)
