@@ -5,10 +5,9 @@ class GuestsController < ApplicationController
 
   def create
     if guest = guests_repository.find(name: create_params[:name])
-      # TODO unless already rsvp'd?
       render :create, locals: { guests: guests_repository.find_all(id: guest.associated_guest_ids) }
     else
-      # TODO error message
+      flash.now[:alert] = t('views.rsvp.create.error')
       render :show
     end
   end
@@ -18,7 +17,7 @@ class GuestsController < ApplicationController
       guests_repository.update(guest_id, attributes)
     end
 
-    # TODO thank you message
+    flash[:notice] = t('views.rsvp.update.thanks')
     redirect_to recommendations_path(locale)
   end
 

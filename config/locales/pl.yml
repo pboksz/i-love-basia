@@ -90,10 +90,13 @@ pl:
         name: 'Imię Nazwisko'
         submit: 'Dalej'
       create:
+        error: "Nie ma nikogo na liście o tej nazwie."
         info: "Proszę nam powiedzieć, czy ty i twoi goście związane przychodzą do ślubu."
         accept: "Będziemy Obecni"
         decline: "Niestety, Nie Możemy Byc Obecni"
         submit: "RSVP"
+      update:
+        thanks: "Dziękuję za odpowiedź. Proszę zapoznać się z naszymi zaleceniami w Krakowie."
 
     contact_us:
       header: "Wyślij do nas pytania, poprosić utwór, lub po prostu się przywitać."
