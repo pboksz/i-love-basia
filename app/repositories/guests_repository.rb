@@ -25,8 +25,9 @@ class GuestsRepository
     find_all(attributes).first
   end
 
-  def find_or_create(attributes = {})
-    find(attributes) || create(attributes)
+  def find_by_name(name)
+    guests = klass.where('name LIKE ?', "%#{name}%")
+    guests.size == 1 ? guests.first : nil
   end
 
   def update(id, attributes)

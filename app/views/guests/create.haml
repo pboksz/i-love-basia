@@ -1,15 +1,16 @@
 .rsvp
   %h2= simple_format(t('views.rsvp.header'))
+  = simple_format(t('views.rsvp.create.info'))
+
   = form_tag guests_path(locale), method: :put do
-    = simple_format(t('views.rsvp.create.info'))
-    - guests.each do |guest|
+    - guest_group.guests.each do |guest|
       .section
-        .name= "#{guest.name}: "
+        .name= guest.name
         .option
-          = radio_button_tag "guest[#{guest.id}][attending]", true
+          = radio_button_tag "guest[#{guest.id}][attending]", true, guest.attending?
           = label_tag "guest[#{guest.id}][attending][true]", t('views.rsvp.create.accept')
         .option
-          = radio_button_tag "guest[#{guest.id}][attending]", false
+          = radio_button_tag "guest[#{guest.id}][attending]", false, !guest.attending?
           = label_tag "guest[#{guest.id}][attending][false]", t('views.rsvp.create.decline')
 
     -#TODO comments
