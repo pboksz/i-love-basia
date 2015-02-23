@@ -7,4 +7,8 @@ class GuestsRepository < DefaultRepository
     guests = klass.where('name LIKE ?', "%#{name}%")
     guests.size == 1 ? guests.first : nil
   end
+
+  def responses
+    all.map(&:attending)
+  end
 end

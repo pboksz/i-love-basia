@@ -2,7 +2,8 @@ class Admin::GuestsController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    render :index, locals: { guest_groups: guest_groups_repository.all }
+    render :index, locals: { guest_groups: guest_groups_repository.all,
+                             responses: guests_repository.responses }
   end
 
   def new
@@ -29,6 +30,10 @@ class Admin::GuestsController < ApplicationController
   end
 
   private
+
+  def guests_repository
+    @guests_repository ||= GuestsRepository.new
+  end
 
   def guest_groups_repository
     @guest_groups_repository ||= GuestGroupsRepository.new
