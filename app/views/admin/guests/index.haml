@@ -8,7 +8,10 @@
     %table
       %thead
         %tr
-          %td{ colspan: 2 }= link_to "Group of Guests ##{guest_group.id}"
+          %td= "Group of Guests ##{guest_group.id}"
+          %td
+            = link_to 'Edit', edit_admin_guest_path(locale, guest_group)
+            = link_to 'Delete', admin_guest_path(locale, guest_group), method: :delete
 
       %tbody
         - guest_group.guests.each do |guest|
