@@ -4,8 +4,8 @@ class GuestsController < ApplicationController
   end
 
   def create
-    if guest = guests_repository.find_by_name(create_params[:name])
-      render :create, locals: { guest_group: guest.guest_group }
+    if guest_group = guest_groups_repository.find_by_guest_name(create_params[:name])
+      render :create, locals: { guest_group: guest_group }
     else
       flash.now[:alert] = t('views.rsvp.create.error')
       render :show

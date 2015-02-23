@@ -4,11 +4,16 @@ class GuestsRepository < DefaultRepository
   end
 
   def find_by_name(name)
-    guests = klass.where('name LIKE ?', "%#{name}%")
-    guests.size == 1 ? guests.first : nil
+    klass.where("#{replace_letter('name')} LIKE #{replace_letter('?')}", "%#{name}%")
   end
 
   def responses
     all.map(&:attending)
+  end
+
+  private
+
+  def replace_letter(with)
+    "REPLACE(REPLACE(#{with}, 'ł', 'l'), 'Ł', 'L')"
   end
 end

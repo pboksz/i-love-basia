@@ -27,6 +27,11 @@ class GuestGroupsRepository < DefaultRepository
     group
   end
 
+  def find_by_guest_name(name)
+    guest_groups = guests_repository.find_by_name(name).map(&:guest_group).uniq
+    guest_groups.count == 1 ? guest_groups.first : nil
+  end
+
   private
 
   def guests_repository
