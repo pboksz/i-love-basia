@@ -34,3 +34,5 @@
           %tr
             %td= guest.name
             %td= attending_tag(guest.attending)
+        %tr
+          %td{ colspan: 2 }= comments_tag(guest_group.comments)
