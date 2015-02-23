@@ -1,17 +1,16 @@
 .admin.guests.index
-  %h2= simple_format("All Guests")
+  %h2= simple_format("All Groups of Guests")
 
   .section.actions
     = link_to 'Add a Group of Guests', new_admin_guest_path(locale)
 
-  %table
-    %thead
-      %tr
-        %td= 'Name'
-        %td= 'Attending?'
-
-    %tbody
-      - guests.each do |guest|
+  - guest_groups.each do |guest_group|
+    %table
+      %thead
         %tr
-          %td= guest.name
-          %td= guest.attending?
+          %td= link_to 'Guest Group'
+
+      %tbody
+        - guest_group.guests.each do |guest|
+          %tr
+            %td= "#{guest.name} - #{guest.attending?}"

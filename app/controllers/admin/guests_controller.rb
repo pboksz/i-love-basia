@@ -2,33 +2,25 @@ class Admin::GuestsController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    render :index, locals: { guests: guests_repository.all }
+    render :index, locals: { guest_groups: guest_groups_repository.all }
   end
 
   def new
-    guests = (1..6).map { guests_repository.new }
-    render :new, locals: { guests: guests }
+    render :new, locals: { guest_group: guest_groups_repository.new }
   end
 
   def create
-    guests = create_params.map do |id, attributes|
-      guests_repository.find_or_create(attributes)
-    end.compact
-
-    guests.each do |guest|
-      guests_repository.update(guest.id, associated_guest_ids: guests.map(&:id))
-    end
-
+    guest_groups_repository.create(create_params)
     redirect_to admin_guests_path(locale)
   end
 
   private
 
-  def guests_repository
-    @guests_repository ||= GuestsRepository.new
+  def guest_groups_repository
+    @guest_groups_repository ||= GuestGroupsRepository.new
   end
 
   def create_params
-    params.require(:guest).reject { |id, attributes| attributes[:name].blank? }.permit!
+    params.require(:guest_group).permit(guests: [:name])
   end
 end
