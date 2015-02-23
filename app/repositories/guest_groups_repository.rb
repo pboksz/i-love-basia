@@ -1,12 +1,6 @@
-class GuestGroupsRepository
-  attr_reader :klass
-
-  def initialize
+class GuestGroupsRepository < DefaultRepository
+  def after_initialize
     @klass = GuestGroup
-  end
-
-  def all
-    klass.all
   end
 
   def new(attributes = {})
@@ -25,14 +19,6 @@ class GuestGroupsRepository
     end
   end
 
-  def find_all(attributes)
-    klass.where(attributes)
-  end
-
-  def find(attributes)
-    find_all(attributes).first
-  end
-
   def update(id, attributes)
     if guests_attributes = attributes.delete(:guests)
       group = update(id, attributes)
@@ -40,10 +26,6 @@ class GuestGroupsRepository
 
       group
     end
-  end
-
-  def destroy(id)
-    klass.destroy(id)
   end
 
   private
