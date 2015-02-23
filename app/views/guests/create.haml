@@ -5,7 +5,7 @@
   = form_tag guests_path(locale), method: :put do
     - guest_group.guests.each do |guest|
       .section
-        .name= guest.name
+        .option= guest.name
         .option
           = radio_button_tag "guest[#{guest.id}][attending]", true, guest.attending == true
           = label_tag "guest[#{guest.id}][attending][true]", t('views.rsvp.create.accept')

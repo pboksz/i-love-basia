@@ -12,13 +12,18 @@ form
   input[type=submit]
     background-color: $link-color
     margin-top: 1em
+  textarea
+    width: 60%
+    height: 100px
 
-  .name, .option
+  .option
     display: inline-block
     width: 20%
     min-width: 200px
-
-  .option
+    &:first-of-type
+      text-align: left
+    &:last-of-type
+      text-align: right
     label
       cursor: pointer
     input[type=radio]
