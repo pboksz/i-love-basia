@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   scope '(:locale)', locale: /(en|pl)/ do
     namespace :admin do
-      resources :guests, only: [:index, :new, :create]
+      resources :guests
     end
 
     get '/information', to: 'home#information'

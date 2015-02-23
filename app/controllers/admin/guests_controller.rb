@@ -10,7 +10,21 @@ class Admin::GuestsController < ApplicationController
   end
 
   def create
-    guest_groups_repository.create(create_params)
+    guest_groups_repository.create(guest_params)
+    redirect_to admin_guests_path(locale)
+  end
+
+  def edit
+    render :edit, locals: { guest_group: guest_groups_repository.find(id: params[:id]) }
+  end
+
+  def update
+    guest_groups_repository.update(params[:id], guest_params)
+    redirect_to admin_guests_path(locale)
+  end
+
+  def destroy
+    guest_groups_repository.destroy(params[:id])
     redirect_to admin_guests_path(locale)
   end
 
@@ -20,7 +34,7 @@ class Admin::GuestsController < ApplicationController
     @guest_groups_repository ||= GuestGroupsRepository.new
   end
 
-  def create_params
-    params.require(:guest_group).permit(guests: [:name])
+  def guest_params
+    params.require(:guest_group).permit(guests: [:id, :name])
   end
 end
