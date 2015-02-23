@@ -1,3 +1,3 @@
 class GuestGroup < ActiveRecord::Base
-  has_many :guests
+  has_many :guests, dependent: :destroy
 end
