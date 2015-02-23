@@ -54,7 +54,7 @@ class GuestGroupsRepository
 
   def create_guests(group_id, guests_attributes)
     guests_attributes.each do |guest_attributes|
-      guests_repository.create(guest_attributes.merge(guest_group_id: group.id))
+      guests_repository.create(guest_attributes.merge(guest_group_id: group_id))
     end
   end
 
