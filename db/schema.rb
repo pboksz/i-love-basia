@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150223102825) do
+ActiveRecord::Schema.define(version: 20150223103054) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",              limit: 255
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20150223102825) do
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
     t.text     "associated_guest_ids", limit: 65535
+    t.integer  "guest_group_id",       limit: 4
   end
 
 end
