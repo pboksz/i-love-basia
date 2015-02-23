@@ -13,7 +13,9 @@
           = radio_button_tag "guest[#{guest.id}][attending]", false, guest.attending == false
           = label_tag "guest[#{guest.id}][attending][false]", t('views.rsvp.create.decline')
 
-    -#TODO comments
+    .section
+      = hidden_field_tag "id", guest_group.id
+      = text_area_tag "guest_group[comments]", guest_group.comments, placeholder: t('views.rsvp.create.comments')
 
     .section.actions
       = submit_tag t('views.rsvp.create.submit')

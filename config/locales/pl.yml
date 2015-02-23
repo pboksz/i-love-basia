@@ -94,6 +94,7 @@ pl:
         info: "Proszę nam powiedzieć, czy ty i twoi goście związane przychodzą do ślubu."
         accept: "Będziemy Obecni"
         decline: "Niestety, Nie Możemy Byc Obecni"
+        comments: "Dodatkowe Komentarze..."
         submit: "RSVP"
       update:
         thanks: "Dziękuję za odpowiedź. Proszę zapoznać się z naszymi zaleceniami w Krakowie."

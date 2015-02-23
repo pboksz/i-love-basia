@@ -13,9 +13,8 @@ class GuestsController < ApplicationController
   end
 
   def update
-    update_params.each do |guest_id, attributes|
-      guests_repository.update(guest_id, attributes)
-    end
+    update_params.each { |id, attributes| guests_repository.update(id, attributes) }
+    guest_groups_repository.update(params[:id], guest_group_params)
 
     flash[:notice] = t('views.rsvp.update.thanks')
     redirect_to recommendations_path(locale)
@@ -27,11 +26,19 @@ class GuestsController < ApplicationController
     @guests_repository ||= GuestsRepository.new
   end
 
+  def guest_groups_repository
+    @guest_groups_repository ||= GuestGroupsRepository.new
+  end
+
   def create_params
     params.require(:guest).permit(:name)
   end
 
   def update_params
     params.require(:guest).permit!
+  end
+
+  def guest_group_params
+    params.require(:guest_group).permit(:comments)
   end
 end

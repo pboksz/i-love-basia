@@ -94,6 +94,7 @@ en:
         info: "Please tell us if you and your associated guests are coming to the wedding."
         accept: "Accepts with Pleasure"
         decline: "Declines with Regret"
+        comments: "Additional comments..."
         submit: "RSVP"
       update:
         thanks: "Thank you for responding. Please take a look at our recommendations for Kraków."
