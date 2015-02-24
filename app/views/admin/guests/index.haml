@@ -27,7 +27,7 @@
           %td= "Group of Guests ##{guest_group.id}"
           %td
             = link_to 'Edit', edit_admin_guest_path(locale, guest_group)
-            = link_to 'Delete', admin_guest_path(locale, guest_group), method: :delete
+            = link_to 'Delete', admin_guest_path(locale, guest_group), method: :delete, data: { confirm: 'Are you sure?' }
 
       %tbody
         - guest_group.guests.each do |guest|
