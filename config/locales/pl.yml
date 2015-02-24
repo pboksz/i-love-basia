@@ -5,7 +5,7 @@ pl:
       our_story: "Nasza Historia"
       gallery: "Galeria"
       recommendations: "Rekomendacje"
-      rsvp: "RSVP"
+      rsvp: "Potwierdzenie Przybycia"
       contact_us: "Kontakt"
 
     footer:
@@ -100,5 +100,5 @@ pl:
         thanks: "Dziękuję za odpowiedź. Proszę zapoznać się z naszymi zaleceniami w Krakowie."
 
     contact_us:
-      header: "Wyślij do nas pytania, poprosić utwór, lub po prostu się przywitać."
+      header: "Wyślij do nas pytania, poprosić o utwór, lub się przywitaj!"
       info: "Wyślij E-Mail do:"
