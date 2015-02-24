@@ -6,7 +6,11 @@
 
   %h2= simple_format(t('views.recommendations.hotels.header'))
   = simple_format(t('views.recommendations.hotels.paragraphs.grand', link: blank_link_tag('Grand Hotel', 'http://www.grand.pl')))
-  = simple_format(t('views.recommendations.coming_soon'))
+  = simple_format(blank_link_tag('Hotel Komorowski', 'http://www.hotelkomorowski.com'))
+  = simple_format(blank_link_tag('Hotel Europejski', 'http://www.hoteleuropejskikrakow.com'))
+  = simple_format(blank_link_tag('Hotel Saski', 'http://www.hotelsaski.com.pl'))
+  = simple_format(blank_link_tag('Hotel Ibis Budget', 'http://www.accorhotels.com/gb/hotel-7165-ibis-budget-krakow-stare-miasto/index.shtml'))
+  .divider
 
   %h2= simple_format(t('views.recommendations.restaurants.header'))
   = simple_format(t('views.recommendations.restaurants.paragraphs.bagels', link: blank_link_tag('Bagelmama', 'http://www.bagelmama.com')))
@@ -43,5 +47,6 @@
   = simple_format(blank_link_tag('Galeria Kazimierz', 'http://galeriakazimierz.pl'))
   = simple_format(blank_link_tag('Bonarka City Center', 'http://www.bonarkacitycenter.pl'))
   .divider
+
   %h2= simple_format(t('views.recommendations.beauty.header'))
   = simple_format(t('views.recommendations.coming_soon'))
