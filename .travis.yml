@@ -8,6 +8,10 @@ before_script:
   - bundle exec rake db:migrate
 script:
   - bundle exec rspec spec
+addons:
+  code_climate:
+    repo_token:
+      secure: HjBIkHvvG6aOe+dIS8S2qxo3m7SoT8Ga0NkvEUkJoJ9Pbm21P8f/MJP9I8kpu3Luy94zlaXLw2yTcd3l3ZfEBiNGAQIUOrfEiYvHPP24/iupfIHoeZP2EKim0hPDnhBXEPjoudrcNqSiluSdqv6D+hKWIbMOWo96i2BDFNGezSE=
 deploy:
   provider: heroku
   strategy: git
