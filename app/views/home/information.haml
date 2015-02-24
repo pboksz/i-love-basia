@@ -1,5 +1,5 @@
 .information
-  %h2= simple_format("Basia and Phillip are getting married on\nSaturday, May 30th 2015 in Kraków, Poland.")
+  %h2= simple_format(t('views.information.header'))
   - t('views.information.paragraphs').each do |key, paragraph|
     = simple_format(paragraph)
   .divider
