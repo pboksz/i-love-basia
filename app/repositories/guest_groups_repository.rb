@@ -11,12 +11,15 @@ class GuestGroupsRepository < DefaultRepository
   end
 
   def create(attributes = {})
-    if guests_attributes = attributes.delete(:guests).reject { |attrs| attrs['name'].blank? }
-      group = klass.create(attributes)
-      create_guests(group.id, guests_attributes)
+    guests_attributes = attributes.delete(:guests)
+    group = super(attributes)
 
-      group
+    if guests_attributes
+      present_guests_attributes = guests_attributes.reject { |attrs| attrs['name'].blank? }
+      create_guests(group.id, present_guests_attributes)
     end
+
+    group
   end
 
   def update(id, attributes)
