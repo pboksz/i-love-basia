@@ -1,5 +1,6 @@
 development: &development
   delivery_method: 'smtp'
+  asset_host: 'http://localhost:3000'
   app_host:
     host: 'localhost'
     port: 3000
@@ -9,6 +10,7 @@ development: &development
 production:
   <<: *development
   delivery_method: 'smtp'
+  asset_host: 'http://www.ilovebasia.com'
   app_host:
     host: 'ilovebasia.com'
   smtp_settings:
