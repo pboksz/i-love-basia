@@ -1,4 +1,6 @@
-%h2= 'A group of guests RSVP\'d!'
-- @guest_group.guests.each do |guest|
-  %p= "#{guest.name}: #{attending_tag(guest.attending)}"
-%p= simple_format(@guest_group.comments)
+.container{ style: 'width: 60%; margin: 0 auto; text-align: center;' }
+  = image_tag('monogram.jpg')
+  %h2= 'A group of guests RSVP\'d!'
+  - @guest_group.guests.each do |guest|
+    %p= "#{guest.name}: #{attending_tag(guest.attending)}"
+  %p= simple_format(@guest_group.comments)
