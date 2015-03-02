@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails'
 # Simple admin authentication
 gem 'admin_auth'
+# Gem for configuration
+gem 'a9n'
 
 group :test do
   gem 'codeclimate-test-reporter', require: nil

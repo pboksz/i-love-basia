@@ -14,6 +14,10 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+require 'a9n'
+A9n.root = File.expand_path('../..', __FILE__)
+A9n.load
+
 module WeddingSite
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
