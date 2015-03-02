@@ -1,5 +1,5 @@
 class RsvpMailer < ActionMailer::Base
-  default template_path: 'mailers'
+  add_template_helper ApplicationHelper
 
   def rsvp_email(guest_group)
     @guest_group = guest_group
