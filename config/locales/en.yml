@@ -1,5 +1,10 @@
 en:
   views:
+    meta:
+      title: "Phillip and Basia's Wedding Information"
+      description: "Phillip and Basia's wedding information website. All the information you need for attending our wedding on May 30th, 2015 in Kraków, Poland"
+      keywords: "Phillip, Basia, Kraków, Krakow, Poland, wedding, celebration, information, story, recommendations, hotel, church, marriage, ceremony, rsvp"
+
     header:
       information: "Information"
       our_story: "Our Story"
@@ -7,9 +12,6 @@ en:
       recommendations: "Recommendations"
       rsvp: "RSVP"
       contact_us: "Contact Us"
-
-    footer:
-      information: "Phillip and Basia's Wedding Information"
 
     information:
       header: "Basia and Phillip are getting married on\nSaturday, May 30th 2015 in Kraków, Poland."

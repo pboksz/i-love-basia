@@ -1,5 +1,10 @@
 pl:
   views:
+    meta:
+      title: "Phillipa i Basi Informacje Ślubne"
+      description: "Phillipa i Basi Informacje Ślubne. Wszystkie informacje potrzebne żeby przyjść na nasze wesele w 30 maja 2015 w Krakowie"
+      keywords: "Phillip, Basia, Kraków, Polska, ślub, wesele, informacja, historia, zalecenia, hotele, kościół, małżeństwo, ceremonia, rsvp"
+
     header:
       information: "Informacja"
       our_story: "Nasza Historia"
@@ -7,9 +12,6 @@ pl:
       recommendations: "Rekomendacje"
       rsvp: "Potwierdzenie Przybycia"
       contact_us: "Kontakt"
-
-    footer:
-      information: "Phillipa i Basi Informacje Ślubne"
 
     information:
       header: "Basia i Phillip biorą ślub w\nSobota, 30 maja 2015 w Krakowie."
