@@ -13,7 +13,7 @@ describe Admin::GuestsController do
     let(:guest_groups) { double }
     let(:responses) { double }
     before do
-      expect(guest_groups_repository).to receive(:all).and_return(guest_groups)
+      expect(guest_groups_repository).to receive(:ordered).and_return(guest_groups)
       expect(guests_repository).to receive(:responses).and_return(responses)
       get :index
     end
