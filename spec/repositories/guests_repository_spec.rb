@@ -9,12 +9,12 @@ describe GuestsRepository do
 
   describe '#find_by_name' do
     let(:query) { "REPLACE(REPLACE(name, 'ł', 'l'), 'Ł', 'L') LIKE REPLACE(REPLACE(?, 'ł', 'l'), 'Ł', 'L')" }
-    before { expect(Guest).to receive(:where).with(query, "%First Last%") }
+    before { expect(Guest).to receive(:where).with(query, '%First Last%') }
 
     it { subject.find_by_name('First Last') }
   end
 
-  describe "#responses" do
+  describe '#responses' do
     describe 'no guests in db' do
       it { expect(subject.responses).to be_empty }
     end

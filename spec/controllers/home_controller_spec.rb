@@ -13,7 +13,7 @@ describe HomeController do
 
   describe 'GET #gallery' do
     let(:image_names) { double }
-    let(:image_locator) { double(:image_names => image_names) }
+    let(:image_locator) { double(image_names: image_names) }
     before do
       allow(ImageLocator).to receive(:new).and_return(image_locator)
       get :gallery

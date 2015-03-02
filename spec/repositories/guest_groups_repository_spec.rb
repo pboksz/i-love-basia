@@ -28,7 +28,7 @@ describe GuestGroupsRepository do
 
   describe '#create' do
     describe 'with guest attributes' do
-      let(:attributes) { { guests: [{'name' => ''}, {'name' => 'First Last'}] } }
+      let(:attributes) { { guests: [{ 'name' => '' }, { 'name' => 'First Last' }] } }
 
       it { expect(subject.create(attributes).guests.map(&:name)).to include 'First Last' }
       it { expect(subject.create(attributes).guests.map(&:name)).not_to include '' }
@@ -50,7 +50,7 @@ describe GuestGroupsRepository do
     end
 
     describe 'with guest attributes' do
-      let(:attributes) { { comments: '', guests: [{id: guest.id, name: 'New Name'}] } }
+      let(:attributes) { { comments: '', guests: [{ id: guest.id, name: 'New Name' }] } }
       it { expect(subject.update(guest_group.id, attributes).guests.map(&:name)).to include 'New Name' }
     end
   end

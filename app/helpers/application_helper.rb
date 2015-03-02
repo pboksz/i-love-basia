@@ -20,7 +20,7 @@ module ApplicationHelper
   end
 
   def comments_tag(comments)
-    comments = comments || '&nbsp;'.html_safe
+    comments ||= '&nbsp;'.html_safe
     content_tag :span, comments.truncate(30), title: comments
   end
 end

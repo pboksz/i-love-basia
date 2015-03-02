@@ -21,7 +21,7 @@ describe DefaultRepository do
 
   describe '#create' do
     describe 'valid attributes' do
-      it { expect{ repository.create(attributes_for(:guest)) }.to change{ Guest.count }.by(1) }
+      it { expect { repository.create(attributes_for(:guest)) }.to change { Guest.count }.by(1) }
     end
   end
 
@@ -56,6 +56,6 @@ describe DefaultRepository do
 
   describe '#destroy' do
     let!(:guest) { create(:guest) }
-    it { expect{ repository.destroy(guest.id) }.to change{ Guest.count }.by(-1) }
+    it { expect { repository.destroy(guest.id) }.to change { Guest.count }.by(-1) }
   end
 end
