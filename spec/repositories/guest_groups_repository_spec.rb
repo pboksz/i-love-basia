@@ -7,6 +7,13 @@ describe GuestGroupsRepository do
     it { expect(subject.klass).to eq GuestGroup }
   end
 
+  describe '#ordered' do
+    let!(:guest1) { create(:guest, name: 'First B') }
+    let!(:guest2) { create(:guest, name: 'First A') }
+
+    it { expect(subject.ordered.flat_map(&:guests)).to eq [guest2, guest1] }
+  end
+
   describe '#new' do
     describe 'without attributes' do
       it { expect(subject.new).to be_a GuestGroup }

@@ -3,6 +3,10 @@ class GuestGroupsRepository < DefaultRepository
     @klass = GuestGroup
   end
 
+  def ordered
+    all.sort_by { |group| group.guests.map(&:last_name) }
+  end
+
   def new(attributes = {})
     group = klass.new(attributes)
     group.guests = new_guests
