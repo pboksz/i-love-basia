@@ -9,8 +9,8 @@ module ApplicationHelper
     end
   end
 
-  def outside_link_tag(text, url)
-    link_to text, url, target: :_blank
+  def outside_link_tag(text, url, options = {})
+    link_to(text, url, target: :_blank) + map_link_tag(options[:map])
   end
 
   def attending_tag(attending)
@@ -22,5 +22,15 @@ module ApplicationHelper
   def comments_tag(comments)
     comments = '&nbsp;'.html_safe unless comments.present?
     content_tag :span, comments.truncate(30), title: comments
+  end
+
+  private
+
+  def map_link_tag(link)
+    if link
+      link_to link, class: 'map-link', target: :_blank do
+        icon('map-marker')
+      end
+    end
   end
 end
