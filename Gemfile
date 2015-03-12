@@ -27,6 +27,8 @@ gem 'haml-rails'
 gem 'admin_auth'
 # Gem for configuration
 gem 'a9n'
+# Gem for font icons
+gem 'font-awesome-sass'
 
 group :test do
   gem 'codeclimate-test-reporter', require: nil
