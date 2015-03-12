@@ -6,10 +6,11 @@
 
   %h2= simple_format(t('views.recommendations.hotels.header'))
   = simple_format(t('views.recommendations.hotels.paragraphs.grand', link: outside_link_tag('Grand Hotel', 'http://www.grand.pl')))
-  = simple_format(outside_link_tag('Hotel Komorowski', 'http://www.hotelkomorowski.com'))
-  = simple_format(outside_link_tag('Hotel Europejski', 'http://www.hoteleuropejskikrakow.com'))
-  = simple_format(outside_link_tag('Hotel Saski', 'http://www.hotelsaski.com.pl'))
-  = simple_format(outside_link_tag('Hotel Ibis Budget', 'http://www.accorhotels.com/gb/hotel-7165-ibis-budget-krakow-stare-miasto/index.shtml'))
+  = simple_format(outside_link_tag('Grand Hotel', 'http://www.grand.pl', map: 'https://goo.gl/maps/nJ91h'))
+  = simple_format(outside_link_tag('Hotel Komorowski', 'http://www.hotelkomorowski.com', map: 'https://goo.gl/maps/GPp1G'))
+  = simple_format(outside_link_tag('Hotel Europejski', 'http://www.hoteleuropejskikrakow.com', map: 'https://goo.gl/maps/1PriX'))
+  = simple_format(outside_link_tag('Hotel Saski', 'http://www.hotelsaski.com.pl', map: 'https://goo.gl/maps/9xKh0'))
+  = simple_format(outside_link_tag('Hotel Ibis Budget', 'http://www.accorhotels.com/gb/hotel-7165-ibis-budget-krakow-stare-miasto/index.shtml', map: 'https://goo.gl/maps/yFRnr'))
   .divider
 
   %h2= simple_format(t('views.recommendations.restaurants.header'))
