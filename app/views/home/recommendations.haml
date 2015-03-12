@@ -14,14 +14,14 @@
   .divider
 
   %h2= simple_format(t('views.recommendations.restaurants.header'))
-  = simple_format(t('views.recommendations.restaurants.paragraphs.bagels', link: outside_link_tag('Bagelmama', 'http://www.bagelmama.com')))
-  = simple_format(t('views.recommendations.restaurants.paragraphs.french', link: outside_link_tag('Charlotte', 'http://www.bistrocharlotte.com')))
-  = simple_format(t('views.recommendations.restaurants.paragraphs.brunch', link: outside_link_tag('Nova', 'http://novarestobar.pl'), link2: outside_link_tag('Magnes', 'http://www.magnes.krakow.pl')))
-  = simple_format(t('views.recommendations.restaurants.paragraphs.pasta', link: outside_link_tag('Trufla', 'https://www.facebook.com/trufla.krakow')))
-  = simple_format(t('views.recommendations.restaurants.paragraphs.polish', link: outside_link_tag('Marmolada', 'http://marmoladarestauracja.pl/en')))
-  = simple_format(t('views.recommendations.restaurants.paragraphs.steak', link: outside_link_tag('Pimento', 'http://www.pimiento.pl')))
-  = simple_format(t('views.recommendations.restaurants.paragraphs.burgers', link: outside_link_tag('Well Done', 'https://www.facebook.com/pages/Well-Done/593169484049058')))
-  = simple_format(t('views.recommendations.restaurants.paragraphs.late', link: outside_link_tag('Kiełbasy', 'https://www.facebook.com/KielbaskiZPodHaliTargowej'), link2: outside_link_tag('Kumpir', 'http://krakowskikumpir.pl/en')))
+  = simple_format(t('views.recommendations.restaurants.paragraphs.bagels', link: outside_link_tag('Bagelmama', 'http://www.bagelmama.com', map: 'https://goo.gl/maps/4oQZH')))
+  = simple_format(t('views.recommendations.restaurants.paragraphs.french', link: outside_link_tag('Charlotte', 'http://www.bistrocharlotte.com', map: 'https://goo.gl/maps/gT01z')))
+  = simple_format(t('views.recommendations.restaurants.paragraphs.brunch', link: outside_link_tag('Nova', 'http://novarestobar.pl', map: 'https://goo.gl/maps/2A8wt'), link2: outside_link_tag('Magnes', 'http://www.magnes.krakow.pl', map: 'https://goo.gl/maps/MmrO9')))
+  = simple_format(t('views.recommendations.restaurants.paragraphs.pasta', link: outside_link_tag('Trufla', 'https://www.facebook.com/trufla.krakow', map: 'https://goo.gl/maps/97XhK')))
+  = simple_format(t('views.recommendations.restaurants.paragraphs.polish', link: outside_link_tag('Marmolada', 'http://marmoladarestauracja.pl/en', map: 'https://goo.gl/maps/46SX6')))
+  = simple_format(t('views.recommendations.restaurants.paragraphs.steak', link: outside_link_tag('Pimento', 'http://www.pimiento.pl', map: 'https://goo.gl/maps/Qg0rt')))
+  = simple_format(t('views.recommendations.restaurants.paragraphs.burgers', link: outside_link_tag('Well Done', 'https://www.facebook.com/pages/Well-Done/593169484049058', map: 'https://goo.gl/maps/NiIBl')))
+  = simple_format(t('views.recommendations.restaurants.paragraphs.late', link: outside_link_tag('Kiełbasy', 'https://www.facebook.com/KielbaskiZPodHaliTargowej', map: 'https://goo.gl/maps/TdPNM'), link2: outside_link_tag('Kumpir', 'http://krakowskikumpir.pl/en', map: 'https://goo.gl/maps/OOFrO')))
   .divider
 
   %h2= simple_format(t('views.recommendations.bars.header'))
