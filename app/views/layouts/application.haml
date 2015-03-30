@@ -5,6 +5,7 @@
     %title= t('views.meta.title')
     %meta{ name: :description, content: t('views.meta.description') }
     %meta{ name: :keywords, content: t('views.meta.keywords') }
+    %link{ rel: :alternate, href: root_url(locale: :pl), hreflang: :pl }
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = stylesheet_link_tag    '//cdn.rawgit.com/noelboss/featherlight/1.0.4/release/featherlight.min.css'
     = stylesheet_link_tag    '//cdn.rawgit.com/noelboss/featherlight/1.0.4/release/featherlight.gallery.min.css'
