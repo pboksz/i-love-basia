@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
     resource :guests, only: [:show, :create, :update]
 
+    get 'sitemap(.xml)' => 'home#sitemap', format: 'xml'
+
     root 'home#information'
   end
 end

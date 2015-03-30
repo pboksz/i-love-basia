@@ -36,4 +36,9 @@ describe HomeController do
     before { get :contact_us }
     it { expect(response).to render_template :contact_us }
   end
+
+  describe 'GET #sitemap' do
+    before { get :sitemap, format: 'xml' }
+    it { expect(response).to render_template :sitemap, layout: false }
+  end
 end

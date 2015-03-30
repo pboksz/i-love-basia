@@ -23,6 +23,10 @@ class HomeController < ApplicationController
     render :contact_us
   end
 
+  def sitemap
+    render :sitemap, layout: false
+  end
+
   private
 
   def image_locator
