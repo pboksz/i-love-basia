@@ -1,0 +1,25 @@
+transportation:
+  - locale: 'views.recommendations.transportation.paragraphs.taxi'
+    link:
+      name: 'iCar'
+      url: 'http://icartaxi.eu'
+  - locale: 'views.recommendations.transportation.paragraphs.tram'
+    link:
+      name: 'Jak Dojade'
+      url: 'http://krakow.jakdojade.pl'
+hotels:
+  - name: 'Grand Hotel'
+    url: 'http://www.grand.pl'
+    map: 'https://goo.gl/maps/nJ91h'
+  - name: 'Hotel Komorowski'
+    url: 'http://www.hotelkomorowski.com'
+    map: 'https://goo.gl/maps/GPp1G'
+  - name: 'Hotel Europejski'
+    url: 'http://www.hoteleuropejskikrakow.com'
+    map: 'https://goo.gl/maps/1PriX'
+  - name: 'Hotel Saski'
+    url: 'http://www.hotelsaski.com.pl'
+    map: 'https://goo.gl/maps/9xKh0'
+  - name: 'Hotel Ibis Budget'
+    url: 'http://www.accorhotels.com/gb/hotel-7165-ibis-budget-krakow-stare-miasto/index.shtml'
+    map: 'https://goo.gl/maps/yFRnr'

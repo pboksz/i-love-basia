@@ -29,6 +29,8 @@ gem 'admin_auth'
 gem 'a9n'
 # Gem for font icons
 gem 'font-awesome-sass'
+# Gem for recursive structs
+gem 'recursive_struct'
 
 group :test do
   gem 'codeclimate-test-reporter', require: nil

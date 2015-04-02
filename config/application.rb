@@ -18,6 +18,8 @@ require 'a9n'
 A9n.root = File.expand_path('../..', __FILE__)
 A9n.load
 
+RECOMMENDATIONS = RecursiveStruct.new(YAML.load(File.read(File.expand_path('../recommendations.yml', __FILE__))))
+
 module WeddingSite
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
