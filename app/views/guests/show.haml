@@ -3,7 +3,7 @@
   = form_tag guests_path(locale), method: :post do
     .section
       = simple_format(t('views.rsvp.show.info'))
-      = text_field_tag 'guest[name]', '', placeholder: t('views.rsvp.show.name')
+      = text_field_tag 'guest[name]', '', placeholder: t('views.rsvp.show.name'), autofocus: true
 
     .section.actions
       = submit_tag t('views.rsvp.show.submit')
