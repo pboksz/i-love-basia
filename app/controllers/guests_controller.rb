@@ -14,8 +14,7 @@ class GuestsController < ApplicationController
 
   def update
     update_params.each { |id, attributes| guests_repository.update(id, attributes) }
-    guest_group = guest_groups_repository.update(params[:id], guest_group_params)
-    RsvpMailer.rsvp_email(guest_group).deliver_now
+    guest_groups_repository.update(params[:id], guest_group_params)
 
     flash[:notice] = t('views.rsvp.update.thanks')
     redirect_to recommendations_path(locale)

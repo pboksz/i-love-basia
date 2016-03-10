@@ -35,12 +35,9 @@ describe GuestsController do
     let(:guest) { create(:guest) }
     let(:guest_group) { guest.guest_group }
     let(:comments) { { comments: 'New Comments' } }
-    let(:mailer) { double }
     before do
       expect(guests_repository).to receive(:update).with(guest.id, 'New Name')
       expect(guest_groups_repository).to receive(:update).with(guest_group.id.to_s, comments).and_return(guest_group)
-      expect(RsvpMailer).to receive(:rsvp_email).with(guest_group).and_return(mailer)
-      expect(mailer).to receive(:deliver_now)
       put :update, id: guest_group.id, guest_group: comments, guest: { guest.id => 'New Name' }
     end
 

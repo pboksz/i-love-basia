@@ -1,29 +1,7 @@
 development: &development
-  delivery_method: 'smtp'
-  asset_host: 'http://localhost:3000'
-  app_host:
-    host: 'localhost'
-    port: 3000
-  smtp_settings:
-    address: 'localhost'
-    port: 1025
+
 production:
   <<: *development
-  delivery_method: 'smtp'
-  asset_host: 'http://www.ilovebasia.com'
-  app_host:
-    host: 'ilovebasia.com'
-  smtp_settings:
-    address: 'smtp.mandrillapp.com'
-    port: 587
-    user_name: <%= ENV['MANDRILL_USERNAME'] %>
-    password: <%= ENV['MANDRILL_APIKEY'] %>
-    domain: 'ilovebasia.com'
-    authentication: 'plain'
-    enable_starttls_auto: true
+
 test:
   <<: *development
-  delivery_method: 'test'
-  app_host:
-    host: 'localhost'
-    port: 3000
