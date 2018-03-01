@@ -5,6 +5,12 @@
   .divider
   %h2= simple_format(t('views.information.countdown.header'))
   .countdown
+    .time.years
+      .value= '0'
+      .label= t('views.information.countdown.years')
+    .time.weeks
+      .value= '0'
+      .label= t('views.information.countdown.weeks')
     .time.days
       .value= '0'
       .label= t('views.information.countdown.days')

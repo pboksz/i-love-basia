@@ -21,7 +21,9 @@ pl:
         3: "Aby nam jeszcze więcej radości przysporzyć,\nprosimy zamiast kwiatów\nkupon lotto na nasze ręce złożyć"
         4: "Ku naszej radości\nprosimy Szanownych Gości,\nzaoszczędźcie nam dźwigania\ni paczek transportowania,\ndo koperty włóż banknocik,\na rozwiążesz ten kłopocik,\nlekko będzie w samolocie\nno i będzie po kłopocie!"
       countdown:
-        header: "Odliczanie do Naszego Ślubu"
+        header: "Czas od Naszego Ślubu"
+        years: "Lata"
+        months: "Tygodnie"
         days: "Dni"
         hours: "Godziny"
         minutes: "Minuty"

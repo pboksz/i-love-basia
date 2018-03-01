@@ -21,7 +21,9 @@ en:
         3: "We kindly request that our guests do not bring flowers to the ceremony,\nbut instead ask for lottery tickets for luck in our future together."
         4: "We also kindly ask our guests to not buy gifts as we will be moving shortly.\nIf you would like to give a gift, we will graciously accept it in cash form."
       countdown:
-        header: "Countdown to Our Wedding"
+        header: "Time Since our Wedding"
+        years: "Years"
+        weeks: "Weeks"
         days: "Days"
         hours: "Hours"
         minutes: "Minutes"
