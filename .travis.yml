@@ -16,7 +16,7 @@ deploy:
   provider: heroku
   strategy: git
   api_key:
-    secure: X47O5PiF9rUmZfwUV0e+tT0JytbUAocc//gqGPELZPLu9sXFrTuSv0v2bDwhIPZjyqDnO4ueztc46vs/KyqPsbooZ6DQK9rIiIAbKoKozCBMchQlnaYoFf/xLPR4lVfJSDzi+Eby0PoGjFzZrZYVYdioyctwnHeCOuqe8HMy23k=
+    secure: o1XfO6+cDrJR2jSGQeh3c8NVDwqCjkmDpOjYik+qwIyIUuzHPw3JBz6cAvxLUqoG0EsSHmtip3NtryjUEWkCRUSHI86HvsKDDoyJJ6JAYDcZ7lalrD4jZ7bvQkyv6Z0TGPmLWb8SWsNejrlpwTvWm4ou+PRRr0XZCKfHLn+fjGo=
   app: i-love-basia
   on:
     repo: pboksz/wedding-site
