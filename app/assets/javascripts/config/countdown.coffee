@@ -5,21 +5,31 @@ $(document).on 'ready page:load', ->
 updateCountdown = ->
   element = $('.countdown')
   dateNow = new Date()
-  dateWedding = new Date('2015.05.30 15:00:00')
-  delta = (dateWedding - dateNow) / 1000
+  dateWedding = new Date('2015.05.30 15:00:00 GMT+01:00')
+  delta = (dateNow - dateWedding) / 1000
+
+  secondsPerYear = 60*60*24*365
+  years = Math.floor(delta / secondsPerYear)
+  delta = delta % secondsPerYear
+
+  secondsPerWeek = 60*60*24*7
+  weeks = Math.floor(delta / secondsPerWeek)
+  delta = delta % secondsPerWeek
 
   secondsPerDay = 60*60*24
-  days = delta / secondsPerDay
+  days = Math.floor(delta / secondsPerDay)
   delta = delta % secondsPerDay
 
   secondsPerHour = 60*60
-  hours = delta / secondsPerHour
+  hours = Math.floor(delta / secondsPerHour)
   delta = delta % secondsPerHour
 
   secondsPerMinute = 60
-  minutes = delta / secondsPerMinute
+  minutes = Math.floor(delta / secondsPerMinute)
   seconds = delta % secondsPerMinute
 
+  element.find('.years .value').text(asTime(years))
+  element.find('.weeks .value').text(asTime(weeks))
   element.find('.days .value').text(asTime(days))
   element.find('.hours .value').text(asTime(hours))
   element.find('.minutes .value').text(asTime(minutes))
