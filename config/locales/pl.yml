@@ -49,7 +49,6 @@ pl:
     gallery:
 
     recommendations:
-      coming_soon: "Więcej informacji i inne opcje wkrótce."
       transportation:
         header: "Transport"
         paragraphs:
@@ -84,8 +83,6 @@ pl:
         header: "Warto Zobaczyć"
       shopping:
         header: "Zakupy"
-      beauty:
-        header: "Salony Piękności / Spa"
 
     rsvp:
       header: "Répondez s'il Vous Plaît"

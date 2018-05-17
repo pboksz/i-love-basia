@@ -10,6 +10,5 @@ describe 'Recommendations page' do
     expect(page).to have_text I18n.t('views.recommendations.bars.header')
     expect(page).to have_text I18n.t('views.recommendations.places.header')
     expect(page).to have_text I18n.t('views.recommendations.shopping.header')
-    expect(page).to have_text I18n.t('views.recommendations.beauty.header')
   end
 end
