@@ -10,7 +10,6 @@ pl:
       our_story: "Nasza Historia"
       gallery: "Galeria"
       recommendations: "Rekomendacje"
-      rsvp: "Potwierdzenie Przybycia"
       contact_us: "Kontakt"
 
     information:
@@ -83,22 +82,6 @@ pl:
         header: "Warto Zobaczyć"
       shopping:
         header: "Zakupy"
-
-    rsvp:
-      header: "Répondez s'il Vous Plaît"
-      show:
-        info: "Podaj nam swoje imię i nazwisko."
-        name: 'Imię Nazwisko'
-        submit: 'Dalej'
-      create:
-        error: "Nie ma nikogo na liście o tej nazwie."
-        info: "Proszę nam powiedzieć, czy ty i twoi goście związane przychodzą do ślubu."
-        accept: "Będziemy Obecni"
-        decline: "Niestety, Nie Możemy Byc Obecni"
-        comments: "Dodatkowe Komentarze..."
-        submit: "RSVP"
-      update:
-        thanks: "Dziękuję za odpowiedź. Proszę zapoznać się z naszymi zaleceniami w Krakowie."
 
     contact_us:
       header: "Wyślij do nas pytania, poprosić o utwór, lub się przywitaj!"

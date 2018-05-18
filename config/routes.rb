@@ -11,9 +11,6 @@ Rails.application.routes.draw do
     get '/gallery', to: 'home#gallery'
     get '/recommendations', to: 'home#recommendations'
     get '/contact_us', to: 'home#contact_us'
-    get '/rsvp', to: 'home#rsvp'
-
-    resource :guests, only: [:show, :create, :update]
 
     get 'sitemap(.xml)' => 'home#sitemap', format: 'xml'
 

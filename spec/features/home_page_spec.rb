@@ -8,7 +8,6 @@ describe 'Home page' do
     expect(page).to have_link I18n.t('views.header.our_story'), href: our_story_path
     expect(page).to have_link I18n.t('views.header.gallery'), href: gallery_path
     expect(page).to have_link I18n.t('views.header.recommendations'), href: recommendations_path
-    expect(page).to have_link I18n.t('views.header.rsvp'), href: rsvp_path
     expect(page).to have_link I18n.t('views.header.contact_us'), href: contact_us_path
   end
 
@@ -20,7 +19,6 @@ describe 'Home page' do
     expect(page).to have_link I18n.t('views.header.our_story', locale: :pl), href: our_story_path(locale: :pl)
     expect(page).to have_link I18n.t('views.header.gallery', locale: :pl), href: gallery_path(locale: :pl)
     expect(page).to have_link I18n.t('views.header.recommendations', locale: :pl), href: recommendations_path(locale: :pl)
-    expect(page).to have_link I18n.t('views.header.rsvp', locale: :pl), href: rsvp_path(locale: :pl)
     expect(page).to have_link I18n.t('views.header.contact_us', locale: :pl), href: contact_us_path(locale: :pl)
   end
 

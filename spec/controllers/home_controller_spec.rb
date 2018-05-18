@@ -27,11 +27,6 @@ describe HomeController do
     it { expect(response).to render_template :recommendations }
   end
 
-  describe 'GET #rsvp' do
-    before { get :rsvp }
-    it { expect(response).to redirect_to guests_path }
-  end
-
   describe 'GET #contact_us' do
     before { get :contact_us }
     it { expect(response).to render_template :contact_us }

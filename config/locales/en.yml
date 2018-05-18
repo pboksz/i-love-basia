@@ -10,7 +10,6 @@ en:
       our_story: "Our Story"
       gallery: "Gallery"
       recommendations: "Recommendations"
-      rsvp: "RSVP"
       contact_us: "Contact Us"
 
     information:
@@ -83,22 +82,6 @@ en:
         header: "Places to See"
       shopping:
         header: "Shopping"
-
-    rsvp:
-      header: "Répondez s'il Vous Plaît"
-      show:
-        info: "Please give us your name."
-        name: 'First Last'
-        submit: 'Next'
-      create:
-        error: "There is no one listed with that name."
-        info: "Please tell us if you and your associated guests are coming to the wedding."
-        accept: "Accepts with Pleasure"
-        decline: "Declines with Regret"
-        comments: "Additional comments..."
-        submit: "RSVP"
-      update:
-        thanks: "Thank you for responding. Please take a look at our recommendations for Kraków."
 
     contact_us:
       header: "Send us questions, request a song, or just say hello."

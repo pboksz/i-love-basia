@@ -15,10 +15,6 @@ class HomeController < ApplicationController
     render :recommendations
   end
 
-  def rsvp
-    redirect_to guests_path(locale)
-  end
-
   def contact_us
     render :contact_us
   end
