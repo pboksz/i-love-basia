@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Home page' do
+describe 'Home page', feature: true do
   before { visit root_path }
 
   it 'has header info' do

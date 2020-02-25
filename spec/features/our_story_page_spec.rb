@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Our Story page' do
+describe 'Our Story page', feature: true do
   before { visit our_story_path }
 
   it 'has our story' do

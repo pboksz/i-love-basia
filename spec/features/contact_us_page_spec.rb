@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Contact Us page' do
+describe 'Contact Us page', feature: true do
   before { visit contact_us_path }
 
   it 'has email contact' do

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Information page' do
+describe 'Information page', feature: true do
   before { visit information_path }
 
   it 'has information and countdown' do

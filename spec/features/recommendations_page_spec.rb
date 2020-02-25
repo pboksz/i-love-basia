@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Recommendations page' do
+describe 'Recommendations page', feature: true do
   before { visit recommendations_path }
 
   it 'has each section' do
