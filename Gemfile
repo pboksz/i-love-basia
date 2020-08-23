@@ -18,7 +18,6 @@ gem 'font-awesome-sass'
 gem 'recursive_struct'
 
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
   gem 'database_cleaner'
 end
 
