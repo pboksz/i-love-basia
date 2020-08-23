@@ -58,8 +58,6 @@ RSpec.configure do |config|
 
   config.before type: :feature do
     DatabaseCleaner.strategy = :truncation
-    page.driver.block_unknown_urls
-    page.driver.browser.set_skip_image_loading(true)
   end
 
   config.before do
