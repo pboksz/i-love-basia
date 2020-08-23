@@ -1,6 +1,7 @@
 development:
   adapter: mysql2
   encoding: utf8
+  collation: utf8_general_ci
   database: wedding_site_development
   username: root
   password:
@@ -12,6 +13,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
+  collation: utf8_general_ci
   database: wedding_site_test
   username: root
   password:
