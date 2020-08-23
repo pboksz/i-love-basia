@@ -7,7 +7,7 @@ describe ApplicationHelper do
     it { expect(subject).to include 'class="image"' }
     it { expect(subject).to include 'a href="#" class="no-link"' }
     it { expect(subject).to include 'data-featherlight' }
-    it { expect(subject).to include 'gallery/01.jpg' }
+    it { expect(subject).to include 'gallery/01' }
   end
 
   describe '#outside_link_tag' do
