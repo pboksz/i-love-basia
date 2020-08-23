@@ -1,29 +1,27 @@
-ruby '2.2.0'
+ruby '2.4.2'
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 gem 'mysql2'
 
 gem 'sass-rails', '~> 5.0'
+gem 'font-awesome-sass'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'therubyracer', platforms: :ruby
-gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'jquery-rails'
 gem 'haml-rails'
-gem 'admin_auth'
-gem 'font-awesome-sass'
 gem 'recursive_struct'
+gem 'admin_auth'
 
 group :test do
   gem 'database_cleaner'
 end
 
 group :development, :test do
-  gem 'capybara', require: false
-  gem 'capybara-webkit', require: false
+  gem 'capybara'
+  gem 'capybara-webkit'
   gem 'factory_girl_rails'
   gem 'quiet_assets'
   gem 'pry'

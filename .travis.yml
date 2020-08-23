@@ -1,13 +1,17 @@
 language: ruby
 bundler_args: --without development
 sudo: false
-rvm: 2.2.0
+rvm: 2.4.2
 before_script:
   - cp config/database.yml.example config/database.yml
   - bundle exec rake db:create
   - bundle exec rake db:migrate
-script:
-  - xvfb-run bundle exec rspec --tag ~feature spec
+script: xvfb-run bundle exec rspec spec
+addons:
+  apt:
+    packages:
+      - libqtwebkit-dev
+      - libqtwebkit4
 deploy:
   provider: heroku
   strategy: git
