@@ -1,7 +1,7 @@
 ruby '2.4.2'
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.0'
+gem 'rails', '~> 4.2'
 gem 'mysql2'
 
 gem 'sass-rails', '~> 5.0'
