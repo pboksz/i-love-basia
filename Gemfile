@@ -11,7 +11,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
-gem 'haml-rails'
+gem 'haml-rails', '~> 1.0'
 gem 'recursive_struct'
 gem 'admin_auth'
 
@@ -20,12 +20,12 @@ group :test do
 end
 
 group :development, :test do
-  gem 'capybara'
-  gem 'capybara-webkit'
+  gem 'capybara', '~> 3.18'
+  gem 'capybara-webkit', '~> 1.15'
   gem 'factory_girl_rails'
   gem 'quiet_assets'
   gem 'pry'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.8'
   gem 'travis'
 end
 
