@@ -22,7 +22,7 @@ pl:
       countdown:
         header: "Czas od Naszego Ślubu"
         years: "Lata"
-        months: "Tygodnie"
+        months: "Miesięcy"
         days: "Dni"
         hours: "Godziny"
         minutes: "Minuty"
