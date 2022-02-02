@@ -20,7 +20,7 @@ updateCountdown = ->
   duration = duration.add(-hours, 'hours')
 
   minutes = Math.floor(duration.asMinutes())
-  durations = duration.add(-minutes, 'minutes')
+  duration = duration.add(-minutes, 'minutes')
 
   seconds = Math.floor(duration.asSeconds())
 
