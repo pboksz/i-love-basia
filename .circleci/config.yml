@@ -27,7 +27,7 @@ jobs:
 
       - run:
           name: Copy Database Configuration
-          command: cp config/database.yml.example config/database.yml
+          command: cp config/database.yml.circleci config/database.yml
 
       - run:
           name: Wait For Database
