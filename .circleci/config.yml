@@ -30,6 +30,10 @@ jobs:
           command: cp config/database.yml.example config/database.yml
 
       - run:
+          name: Wait For Database
+          command: dockerize -wait tcp://localhost:3306 -timeout 1m
+
+      - run:
           name: Create and Load Database
           command: bundle exec rake db:create db:schema:load
 
