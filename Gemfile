@@ -21,6 +21,11 @@ group :test do
   gem 'database_cleaner'
 end
 
+group :production do
+  gem 'heroku-deflater'
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'capybara', '~> 3.18'
   gem 'capybara-webkit', '~> 1.15'
@@ -28,14 +33,8 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'pry'
   gem 'rspec-rails', '~> 3.8'
-  gem 'travis'
 end
 
 group :development, :production do
   gem 'unicorn'
-end
-
-group :production do
-  gem 'heroku-deflater'
-  gem 'rails_12factor'
 end
