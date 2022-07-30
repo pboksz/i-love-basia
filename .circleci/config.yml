@@ -26,6 +26,14 @@ jobs:
           command: bundle install --path vendor/bundle
 
       - run:
+          name: Remove mysql2 Gem
+          command: bundle exec gem uninstall mysql2
+
+      - run:
+          name: Reinstall mysql2 Gem
+          command: bundle install --path vendor/bundle
+
+      - run:
           name: Copy Database Configuration
           command: cp config/database.yml.example config/database.yml
 
