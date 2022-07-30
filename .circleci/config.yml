@@ -26,7 +26,11 @@ jobs:
           command: bundle install --path vendor/bundle
 
       - run:
-          name: Create and  Load Database
+          name: Copy Database Configuration
+          command: cp config/database.yml.example config/database.yml
+
+      - run:
+          name: Create and Load Database
           command: bundle exec rake db:create db:schema:load
 
       - run:
