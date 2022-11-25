@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
-  admin_auth_routes
-
   scope '(:locale)', locale: /(en|pl)/ do
-    namespace :admin do
-      resources :guests
-    end
-
     get '/information', to: 'home#information'
     get '/our_story', to: 'home#our_story'
     get '/gallery', to: 'home#gallery'
