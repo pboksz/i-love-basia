@@ -29,7 +29,7 @@ module ApplicationHelper
   def map_link_tag(link)
     if link
       link_to link, class: 'map-link', target: :_blank do
-        icon('map-marker')
+        icon('fas', 'map-marker-alt')
       end
     end
   end
