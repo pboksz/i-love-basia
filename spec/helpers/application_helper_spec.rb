@@ -27,7 +27,7 @@ describe ApplicationHelper do
 
       it { expect(subject).to include 'class="map-link"' }
       it { expect(subject).to include 'href="http://map.com"' }
-      it { expect(subject).to include 'i class="fa fa-map-marker"' }
+      it { expect(subject).to include 'i class="fas fa-map-marker-alt"' }
     end
   end
 
