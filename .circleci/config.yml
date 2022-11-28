@@ -1,41 +1,41 @@
-version: 2
+version: 2.1
+
+orbs:
+  browser-tools: circleci/browser-tools@1.1
 
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4.2-node-browsers
+      - image: cimg/ruby:2.7-browsers
         environment:
           RAILS_ENV: test
-      - image: circleci/mysql:5.6-ram
-        environment:
-          MYSQL_DATABASE: wedding_site_test
-          MYSQL_ALLOW_EMPTY_PASSWORD: true
-          MYSQL_ROOT_HOST: "%"
 
     working_directory: ~/repo
 
     steps:
+      - browser-tools/install-browser-tools
       - checkout
 
       - run:
           name: Install QT Webkit
-          command: sudo apt-get -y install libqtwebkit-dev libqtwebkit4
+          command: sudo apt-get -y install libqt5webkit5-dev libqt5webkit5
+
+      - run:
+          name: Update Gems
+          command: sudo gem update --system
+
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
 
       - run:
           name: Install Dependencies
           command: bundle install --path vendor/bundle
 
-      - run:
-          name: Copy Database Configuration
-          command: cp config/database.yml.circleci config/database.yml
-
-      - run:
-          name: Wait For Database
-          command: dockerize -wait tcp://localhost:3306 -timeout 1m
-
-      - run:
-          name: Create and Load Database
-          command: bundle exec rake db:create db:schema:load
+      - save_cache:
+          key: gem-cache-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
 
       - run:
           name: Run Specs
@@ -43,18 +43,26 @@ jobs:
 
   deploy:
     docker:
-      - image: circleci/ruby:2.4.2-node-browsers
+      - image: cimg/ruby:2.7-browsers
         environment:
           RAILS_ENV: test
 
     working_directory: ~/repo
 
     steps:
+      - browser-tools/install-browser-tools
       - checkout
 
       - run:
-          name: Deploy to Heroku
-          command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
+          name: Deploy to fly.io
+          command: |
+            apk add --no-cache curl
+            curl -L https://fly.io/install.sh | sh
+            export FLYCTL_INSTALL="/root/.fly"
+            export PATH="$FLYCTL_INSTALL/bin:$PATH"
+            sh -c "flyctl deploy"
+            sh -c "flyctl info"
+            exit 0
 
 workflows:
   version: 2
