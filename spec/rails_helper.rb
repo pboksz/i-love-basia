@@ -45,11 +45,3 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 end
-
-Capybara.server = :webrick
-Capybara.javascript_driver = :webkit
-
-Capybara::Webkit.configure do |config|
-  config.block_unknown_urls
-  config.skip_image_loading
-end

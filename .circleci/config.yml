@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  browser-tools: circleci/browser-tools@1.1
-
 jobs:
   build:
     docker:
@@ -13,12 +10,7 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - browser-tools/install-browser-tools
       - checkout
-
-      - run:
-          name: Install QT Webkit
-          command: sudo apt-get -y install libqt5webkit5-dev libqt5webkit5
 
       - restore_cache:
           keys:
@@ -48,7 +40,6 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - browser-tools/install-browser-tools
       - checkout
 
       - run:

@@ -16,8 +16,6 @@ gem 'haml-rails', '~> 1.0'
 gem 'recursive_struct'
 
 group :development, :test do
-  gem 'capybara', '~> 3.18'
-  gem 'capybara-webkit', '~> 1.15'
   gem 'pry'
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 3.8'
