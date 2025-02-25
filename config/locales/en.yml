@@ -28,25 +28,6 @@ en:
         minutes: "Minutes"
         seconds: "Seconds"
 
-    our_story:
-      header: "Phillip and Basia met almost 20 years ago."
-      paragraphs:
-        1: "Thanks to the friendship of their parents, Phillip and Basia have been in each other’s lives since the start of elementary school.\nAfter not seeing each other for almost 4 years, a series of small and seemingly meaningless moments brought them back together.\nIt is safe to say that the happy beginnings of this love story are owed mostly to their parents."
-        2: "After attending Phillip’s college graduation party, Basia’s Mom suggested that the two get back in touch.\nThe two exchanged some messages online, met to catch up, and have been together ever since the summer of 2010."
-        3: "In the summer of 2011, the pair moved to Krakow, Poland where Basia began her medical studies at the\nJagiellonian University Medical College and Phillip began working as a software engineer at Lunar Logic."
-        4: "During a visit to Paris with Basia’s Parents and Phillip’s Dad and Stepmom, Phillip proposed to Basia in the\nsecluded gardens of the Château de Fontainebleau with a gorgeous custom-made ring."
-        5: "And now, you get to see them start their 'Happily Ever After'."
-      groom:
-        header: "About the Groom"
-        paragraphs:
-         1: "Phillip Jonathan Boksz was born on May 7th, 1988 to Małgorzata and Stanisław Boksz in New Jersey. He grew up in Oakland and spent most of his summers in Europe visiting family and going to camp. Phillip played tennis, fenced, and played the alto sax. He graduated from the University of Massachusetts: Amherst in 2010 with a Bachelor of Science in Computer Science. Phillip now works as a software developer at Lunar Logic in Krakow, Poland. He is a Taurus, hates long walks AND the beach, and loves board games, vodka, and Basia."
-      bride:
-        header: "About the Bride"
-        paragraphs:
-          1: "Barbara Anna Zawisła was born on April 9th, 1989 to Lucyna and Krzysztof Zawisła in Stalowa Wola, Poland. She has two older brothers, Paul and Luke. Basia moved to the United States in 1995. She grew up in Fair Lawn, New Jersey and enjoyed ballroom dancing, volleyball and playing the piano. She graduated from the Rutgers University Honors Program: New Brunswick in 2011 with a Bachelor of Arts in Cell Biology & Neuroscience with a minor in Music. She currently attends the Jagiellonian University Medical College and will graduate in May 2015. She is an Aries, loves food, chocolate, and Phillip."
-
-    gallery:
-
     recommendations:
       transportation:
         header: "Transportation"

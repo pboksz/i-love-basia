@@ -6,11 +6,6 @@ describe HomeController do
     it { expect(response).to render_template :information }
   end
 
-  describe 'GET #our_story' do
-    before { get :our_story }
-    it { expect(response).to render_template :our_story }
-  end
-
   describe 'GET #gallery' do
     let(:image_names) { double }
     let(:image_locator) { double(image_names: image_names) }

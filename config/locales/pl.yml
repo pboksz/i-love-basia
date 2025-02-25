@@ -28,25 +28,6 @@ pl:
         minutes: "Minuty"
         seconds: "Sekundy"
 
-    our_story:
-      header: "Phillip i Basia spotkali się prawie 20 lat temu."
-      paragraphs:
-        1: "Dzięki przyjaźni swojich rodziców, Phillip i Basia znają się od początku podstawówki.\nNie widzieli sie prawie 4 lata, ale seria małych momentów złączyło ich ponownie.\nTrzeba na pewno powiedzieć, że szczęśliwy początkek tej historii miłosnej rozpoczeło się głównie dzięki rodziców."
-        2: "Po ukończeniu uniwersitetu, Phillip miał dużą imprezę na ktorej Basi rodzice byli i Basi Mama zasugerował aby oni się zkontakowali.\nWymienili kilka wiadomości przez internet, spotkali się, aby nadrobić zaległości, i są razem od lata 2010 r."
-        3: "W lecie 2011 r., para się przeniósła do Krakowa, gdzie Basia rozpoczeła studia medyczne w\nCollegium Medicum Uniwersytetu Jagiellońskiego, a Phillip rozpoczął pracę jako programista w Lunar Logic."
-        4: "Podczas wizyty w Paryżu z rodzicami, Phillip się oświadczył w ogrodach  Château de Fontainebleau."
-        5: "A teraz, rozpoczyna się ich 'Długo i Szczęśliwie'."
-      groom:
-        header: "Pan Młody"
-        paragraphs:
-         1: "Phillip Jonathan Boksz, syn Małgorzaty i Stanisława, urodził się 7 maja 1988 w New Jersey. Dorastał w Oakland i spędził większość lata w Europie, odwiedzając rodzinę i jeżdząć na obozy. Phillip grał w tenisa, brał udział w szermierce, i grał na saksofonie altowym. Zkończył studia na University of Massachusetts: Amherst w 2010 roku z Bachelor of Science w dziedzinie informatyki. Phillip teraz pracuje jako programista w Lunar Logic w Krakowie. On jest bykiem, nie znosi długich spacery i plaż, i kocha gry planszowe, wódkę i Basię."
-      bride:
-        header: "Panna Młoda"
-        paragraphs:
-          1: "Barbara Anna Zawisła, córka Lucyny i Krzysztofa, urodziła się 9 kwietnia 1989 w Stalowej Woli. Ma dwóch starszych braci, Pawła i Łukasza. Basia przeprowadziła się do Stanów Zjednoczonych w 1995 r. Dorastała w Fair Lawn, New Jersey i brała udział w taniecu towarzyskim, siatkówce, i grała na fortepianie. Zkończyła studia na Rutgers University Honors Program: New Brunswick w 2011 r. z Bachelor of Arts w biologii komórek i neurologii z małoletnim w muzyce. Obecnie studjuje na Collegium Medicum Uniwersytetu Jagiellońskiego i kończy w maju 2015 r. Jest baranem, kocha jedzenie, czekoladę, i Phillipa."
-
-    gallery:
-
     recommendations:
       transportation:
         header: "Transport"
