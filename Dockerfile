@@ -40,9 +40,6 @@ RUN mkdir /app
 WORKDIR /app
 RUN mkdir -p tmp/pids
 
-RUN gem update --system --no-document && \
-    gem install -N bundler -v ${BUNDLER_VERSION}
-
 #######################################################################
 
 # install packages only needed at build time
